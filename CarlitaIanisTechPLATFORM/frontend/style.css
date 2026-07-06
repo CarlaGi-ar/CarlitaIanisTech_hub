@@ -1,0 +1,99 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+:root {
+    --noapte: #4A1B2A;
+    --noapte-adanc: #341019;
+    --pergament: #F6EFE3;
+    --pergament-2: #EFE5D2;
+    --chihlimbar: #E8A33D;
+    --bordo: #7E2D40;
+    --aramiu: #B5683C;
+    --salvie: #8FA08B;
+    --carbune: #2B2B33;
+    --rosu-ie: #C92A2A;
+    --alb-cald: #FBF7EF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Alegreya Sans', system-ui, sans-serif;
+    background: var(--noapte);
+    color: var(--pergament);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Fraunces', serif;
+    line-height: 1.15;
+}
+
+/* ===== HERO ===== */
+.hero {
+    padding: 56px 24px 80px;
+    max-width: 720px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--chihlimbar);
+    margin: 0 0 18px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5.4vw, 60px);
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.hero h1 em {
+    font-style: italic;
+    color: var(--chihlimbar);
+}
+
+.hero p.sub {
+    font-size: 20px;
+    max-width: 33em;
+    opacity: .93;
+    margin: 0 0 32px;
+}
+
+/* ===== BUTOANE ===== */
+.hero-butoane {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform .15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px)
+}
+
+.btn-amber {
+    background: var(--chihlimbar);
+    color: var(--noapte-adanc);
+    box-shadow: 0 6px 18px rgba(232, 163, 61, .3);
+}
+
+.btn-ghost {
+    border: 2px solid rgba(246, 239, 227, .5);
+    color: var(--pergament);
+}
+
+.btn-ghost:hover {
+    border-color: var(--chihlimbar);
+    color: var(--chihlimbar);
+}
