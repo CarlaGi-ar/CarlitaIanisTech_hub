@@ -18,10 +18,11 @@
 <body>
     <!--HEADER- NAVIGATION-->
     <header class="site-header">
-        <div class="header-bar">
+        <div class="container header-bar">
             <a href="index.html" class="nav-logo">
-                <img src="../assets/logo_carlita_ianis_fara_text.png" alt="Carlita & Ianis Tech" class="logo-img">
+                <img src="../assets/logo_carlita_ianis.png" alt="Carlita & Ianis Tech" class="logo-img">
             </a>
+
             <nav class="nav">
                 <ul class="nav-links">
                     <li><a href="povesteamea.html">Povestea mea</a></li>
@@ -36,11 +37,11 @@
     <main>
         <!--HERO-->
         <section class="hero">
-            <a href="index.html" class="nav-logo">
-                <img src="../assets/banner_red.png" alt="Carlita & Ianis Tech — tehnologia, explicată pe înțelesul tău"
-                    class="header-banner-img">
-            </a>
-            <div class="hero-grid">
+            <div class="hero-banner">
+                <img src="../assets/banner_red.png" alt="Carlita & Ianis Tech">
+            </div>
+
+            <div class="container hero-grid">
                 <div class="hero-text">
                     <p class="eyebrow">NU ESTE NICIODATĂ PREA TÂRZIU SĂ ÎNVEȚI</p>
                     <h1>Tehnologia, explicată <em>pe înțelesul tău</em>.</h1>
@@ -53,7 +54,7 @@
                     </div>
                 </div>
                 <div class="hero-photo-frame">
-                    <img src="../assets/carla-poza.jpg" alt="Carla" class="hero-photo">
+                    <img src="../assets/carla-poza.jpeg" alt="Carla" class="hero-photo">
                 </div>
             </div>
         </section>
@@ -67,60 +68,70 @@
                 <span class="q-italic"> Este aceeași pricepere — doar firul s-a schimbat."</span>
             </blockquote>
         </section>
-
+        <div class="motif-border" aria-hidden="true"></div>
 
         <!--BODY-ULTIMILE STIRI-->
-        <section id="lastupload" class="ultimile-stiri">
-            <p class="eyebrow eyebrow--aramiu">MEREU PROASPĂT</p>
-            <h1>Ce învățăm săptămâna aceasta</h1>
-            <p class="x-divider" aria-hidden="true">✕ ✕ ✕ ✕ ✕ ✕</p>
-            <div class="stiri-grid card-grid">
-                <article class="card">
-                    <span class="badge badge--salvie">LECȚIE PYTHON</span>
-                    <h3>Tuplurile, explicate pe înțelesul tuturor</h3>
-                    <p>Ce sunt, când le folosești și de ce nu se schimbă niciodată.</p>
-                </article>
-                <article class="card">
-                    <span class="badge badge--bordo">ȘTIRE TRADUSĂ</span>
-                    <h3>Nvidia valorează mai mult decât economia Germaniei?</h3>
-                    <p>Ce înseamnă cifra asta uriașă, pe înțelesul României.</p>
-                </article>
-                <article class="card">
-                    <span class="badge badge--aramiu">VIDEO NOU</span>
-                    <h3>Cazul șocant de la Samsung</h3>
-                    <p>Cel mai urmărit videoclip al lunii — vezi de ce.</p>
-                </article>
-            </div>
-            <a href="stiri.html" class="btn-secondary">Vezi toate știrile</a>
+        <section id="lastupload" class="ultimile-stiri section">
+            <div class="container">
+                <div class="section-title section-title--center">
+                    <p class="eyebrow eyebrow--aramiu">MEREU PROASPĂT</p>
+                    <h1>Ce învățăm săptămâna aceasta</h1>
+                    <span class="cusatura-titlu" aria-hidden="true"></span>
+                </div>
+
+                <div class="stiri-grid card-grid">
+                    <article class="card">
+                        <span class="badge badge--salvie">LECȚIE PYTHON</span>
+                        <h3>Tuplurile, explicate pe înțelesul tuturor</h3>
+                        <p>Ce sunt, când le folosești și de ce nu se schimbă niciodată.</p>
+                    </article>
+                    <article class="card">
+                        <span class="badge badge--bordo">ȘTIRE TRADUSĂ</span>
+                        <h3>Nvidia valorează mai mult decât economia Germaniei?</h3>
+                        <p>Ce înseamnă cifra asta uriașă, pe înțelesul României.</p>
+                    </article>
+                    <article class="card">
+                        <span class="badge badge--aramiu">VIDEO NOU</span>
+                        <h3>Cazul șocant de la Samsung</h3>
+                        <p>Cel mai urmărit videoclip al lunii — vezi de ce.</p>
+                    </article>
+                </div>
+                <a href="stiri.html" class="btn-secondary">Vezi toate știrile</a>
         </section>
 
         <!--BODY-PROMISIUNI-->
-        <section class="promisiuni">
-            <p class="eyebrow eyebrow--aramiu">CE GĂSEȘTI AICI</p>
-            <h1>Trei promisiuni, ținute în fiecare săptămână</h1>
-            <div class="promisiuni-grid">
-                <div class="promisiune">
-                    <h3>Lecții, nu lozinci</h3>
-                </div>
-                <div class="promisiune">
-                    <h3>Siguranța familiei tale</h3>
-                </div>
-                <div class="promisiune">
-                    <h3>Știrile, traduse pentru România</h3>
+        <section class="promisiuni section">
+            <div class="container">
+                <p class="eyebrow eyebrow--aramiu">CE GĂSEȘTI AICI</p>
+                <h1>Trei promisiuni, ținute în fiecare săptămână</h1>
+
+                <div class="promisiuni-grid">
+                    <div class="promisiune">
+                        <h3>Lecții pe înțelesul tuturor</h3>
+                    </div>
+
+                    <div class="promisiune">
+                        <h3>Siguranța familiei tale</h3>
+                    </div>
+
+                    <div class="promisiune">
+                        <h3>Știri noi și verificate</h3>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--BODY- POVESTEA MEA-->
-        <section id="povestea-mea" class="povestea-mea">
-            <div class="povestea-mea-grid">
+        <div class="motif-border" aria-hidden="true"></div>
+        <section id="povestea-mea" class="povestea-mea section">
+            <div class="container povestea-mea-grid">
                 <div class="povestea-foto-frame">
-                    <img src="../assets/carla-poza.jpg" alt="Carla" class="povestea-foto">
+                    <img src="../assets/carla-poza2.jpeg" alt="Carla" class="povestea-foto">
                 </div>
                 <div class="poveste-text">
                     <h2>POVESTEA MEA</h2>
                     <h1>De la Vulcan, Valea Jiului, la Inteligența Artificială</h1>
-                    <p class="x-divider" aria-hidden="true">✕ ✕ ✕ ✕ ✕ ✕</p>
+                    <span class="cusatura-titlu" aria-hidden="true"></span>
                     <p><strong>Sunt Carlita.</strong> Mamă a doi băieți, soție și studentă la Computer Science
                         (Inteligență
                         Artificială)
@@ -134,69 +145,98 @@
                         tehnologia de astazi", atunci ești exact unde trebuie.</p>
                     <a href="povesteamea.html" class="btn-secondary">Afla mai multe</a>
                 </div>
+            </div>
         </section>
+        <div class="motif-border" aria-hidden="true"></div>
 
         <!--BODY- CREZUL MEU-->
-        <section id="crezul-meu" class="crezul-meu">
-            <h4>CREZUL MEU</h4>
-            <h1>Tehnologie cu suflet</h1>
-            <ul class="crez-list">
-                <li>Cred că tehnologia trebuie să ajute oamenii, nu să îi sperie.</li>
-                <li>Cred că Inteligența Artificială trebuie înțeleasă de toată lumea.</li>
-                <li>Cred că educația este cea mai bună investiție.</li>
-                <li>Și cred că niciodată nu este prea târziu să înveți ceva nou.</li>
-            </ul>
-            <h2>„Dacă Carla a putut după 30 de ani, pot și eu."</h2>
+        <section id="crezul-meu" class="crezul-meu section">
+            <div class="container">
+                <h4>CREZUL MEU</h4>
+                <h1>Tehnologie cu suflet</h1>
+                <ul class="crez-list">
+                    <li>Cred că tehnologia trebuie să ajute oamenii, nu să îi sperie.</li>
+                    <li>Cred că Inteligența Artificială trebuie înțeleasă de toată lumea.</li>
+                    <li>Cred că educația este cea mai bună investiție.</li>
+                    <li>Și cred că niciodată nu este prea târziu să înveți ceva nou.</li>
+                </ul>
+                <h2>„Dacă Carla a putut după 20 de ani, pot și eu."</h2>
+            </div>
         </section>
+        <div class="motif-border" aria-hidden="true"></div>
 
-        <!--BODY- COMUNITATEA CRESTE- COUNTING FOLLOWERS -->
-        <section id="followers" class="followers">
-            <h4 style="text-align:center;">O COMUNITATIE CARE CRESTE</h4>
-            <div class="followers-grid">
-                <div class="stat">
-                    <p class="stat-numar">214.000+</p>
-                    <p>vizualizări în ultimul an, pe TikTok și YouTube</p>
-                </div>
-                <div class="stat">
-                    <p class="stat-numar">1.100+</p>
-                    <p>urmăritori pe TikTok, Instagram și YouTube</p>
-                </div>
-                <div class="stat">
-                    <p class="stat-numar">83%</p>
-                    <p>dintre spectatori sunt din România — restul, din diaspora</p>
+        <!--BODY- COMUNITATEA CREȘTE-->
+        <section id="followers" class="followers section">
+            <div class="container">
+                <h4>O COMUNITATE CARE CREȘTE</h4>
+
+                <div class="followers-grid">
+                    <div class="stat">
+                        <p class="stat-numar">214.000+</p>
+                        <p>vizualizări în ultimul an, pe TikTok și YouTube</p>
+                    </div>
+
+                    <div class="stat">
+                        <p class="stat-numar">1.100+</p>
+                        <p>urmăritori pe TikTok, Instagram și YouTube</p>
+                    </div>
+
+                    <div class="stat">
+                        <p class="stat-numar">83%</p>
+                        <p>dintre spectatori sunt din România — restul, din diaspora</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--BODY- ABONEAZA-TE-->
-        <section id="aboneazate" class="aboneazate">
-            <p class="eyebrow">GHID GRATIS</p>
-            <h1>Ghidul sigurantei digitale pentru familia ta</h1>
-            <p class="sub">Un ghid cum sa recunosti cele mai frecvente escrocherii online . Scris simplu, de printat
-                si de pus pe frigider. Da! Chiar si pentru parinti si bunici.</p>
-            <div class="aboneazate-grid">
-                <form class="ghid-form" id="ghid-form">
-                    <input type="email" placeholder="Adresa ta de email" required>
-                    <button type="submit" class="btn btn-amber">Trimite-mi ghidul</button>
-                </form>
-                <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut.</p>
+        <section id="aboneazate" class="aboneazate section">
+            <div class="container aboneazate-inner">
+
+                <div class="aboneazate-text">
+                    <p class="eyebrow">GHID GRATUIT</p>
+                    <h1>Ghidul siguranței digitale pentru familia ta</h1>
+                    <p class="sub">
+                        Cele mai frecvente 7 escrocherii online din România și cum le recunoști în 10 secunde.
+                        Scris simplu, de printat și de pus pe frigider — da, chiar pentru părinți și bunici.
+                    </p>
+                </div>
+
+                <div class="aboneazate-form">
+                    <form class="ghid-form" id="ghid-form">
+                        <input type="email" placeholder="Adresa ta de email" required>
+                        <button type="submit" class="btn btn-amber">Trimite-mi ghidul</button>
+                    </form>
+
+                    <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut.</p>
+                </div>
             </div>
         </section>
-
-        <!--IANIS-->
+    </main>
+    <!--IANIS-->
 
 
     <a href="#ianis" class="chat-fab" aria-label="Întreabă-l pe Ianis">🤖</a>
 
     <!--FOOTER-->
     <footer class="footer">
-        <p>© 2026 Carlita & Ianis Tech</p>
-        <ul class="footer-social">
-            <li><a href="#">TikTok</a></li>
-            <li><a href="#">YouTube</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <strong>Carlita <span>&</span> Ianis Tech</strong>
+            </div>
+
+            <ul class="footer-social">
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+
+            <div class="footer-copy">
+                Cusut cu grijă, în Plymouth &amp; Pojoga · © 2026
+            </div>
+
+        </div>
     </footer>
 
     <script src="main.js"></script>
