@@ -657,7 +657,77 @@ a {
         MOBILE
 ==============================*/
 
-@media (max-width:900px){
+@media (max-width: 900px) {
+
+    /* HERO — o singură coloană */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 44px;
+        padding-top: 44px;
+    }
+
+    .hero-photo-frame {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    /* CARDURI ȘTIRI + PROMISIUNI + STATISTICI */
+    .card-grid,
+    .promisiuni-grid,
+    .followers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* POVESTEA MEA */
+    .povestea-mea-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .povestea-foto {
+        height: 420px;
+    }
+
+    /* NAVIGAȚIE — nu mai iese din ecran */
+    .header-bar {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px 22px;
+    }
+
+    .logo-img {
+        height: 56px;
+    }
+
+    /* SECȚIUNI — mai puțin spațiu pe mobil */
+    .section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* FORMULAR — inputul fix de 320px ieșea din ecran */
+    .ghid-form input {
+        width: 100%;
+    }
+
+    .ghid-form button {
+        width: 100%;
+    }
+
+    .hero-photo {
+        height: 340px;
+    }
+}
 
 .footer-content{
     flex-direction:column;
@@ -679,4 +749,22 @@ a {
     white-space:normal;
 }
 
+/* MESAJE FORMULAR */
+.form-mesaj {
+    margin-top: 14px;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.form-mesaj--succes {
+    background: var(--salvie);
+    color: var(--alb-cald);
+}
+
+.form-mesaj--eroare {
+    background: var(--chihlimbar);
+    color: var(--noapte-adanc);
 }
