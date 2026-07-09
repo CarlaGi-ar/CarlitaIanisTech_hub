@@ -15,10 +15,14 @@
     <link rel="stylesheet" href="style.css">
     <!-- MailerLite Universal -->
     <script>
-        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        (function (w, d, e, u, f, l, n) {
+            w[f] = w[f] || function () {
+                (w[f].q = w[f].q || [])
+                    .push(arguments);
+            }, l = d.createElement(e), l.async = 1, l.src = u,
+                n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+        })
+            (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
         ml('account', '2498132');
     </script>
     <!-- End MailerLite Universal -->
@@ -213,11 +217,14 @@
 
                 <div class="aboneazate-form">
                     <form class="ghid-form" id="ghid-form">
+                        <!--Honeypot — bonusul anti-boți-->
+                        <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off" 
+                            style="position:absolute; left:-9999px;" aria-hidden="true">
                         <input type="email" placeholder="Adresa ta de email" required>
                         <button type="submit" class="btn btn-amber">Trimite-mi ghidul</button>
                     </form>
 
-                    <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut.</p>
+                    <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut. Te poți dezabona oricând. </p>
                 </div>
             </div>
         </section>
@@ -236,10 +243,14 @@
             </div>
 
             <ul class="footer-social">
-                <li><a href="https://www.tiktok.com/@carlitaianistech?is_from_webapp=1&sender_device=pc"target="_blank" rel="noopener noreferrer">TikTok</a></li>
-                <li><a href="https://www.youtube.com/@carlita_ianis_tech"target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                <li><a href="https://www.instagram.com/carlita.ianis.tech/"target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=61580936638582"target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@carlitaianistech?is_from_webapp=1&sender_device=pc" target="_blank"
+                        rel="noopener noreferrer">TikTok</a></li>
+                <li><a href="https://www.youtube.com/@carlita_ianis_tech" target="_blank"
+                        rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://www.instagram.com/carlita.ianis.tech/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61580936638582" target="_blank"
+                        rel="noopener noreferrer">Facebook</a></li>
             </ul>
 
             <div class="footer-copy">

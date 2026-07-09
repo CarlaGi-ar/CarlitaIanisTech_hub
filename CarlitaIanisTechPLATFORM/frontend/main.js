@@ -1,13 +1,20 @@
 /*--FORMULARUL DE EMAIL PENTRU GHID GRATIS--*/
 
 // Endpoint subscribe: /jsonp/{account_id}/forms/{form_id}/subscribe
-const MAILERLITE_URL = "https://assets.mlcdn.com/fonts.css?version=1783523";
+const MAILERLITE_URL = "https://assets.mailerlite.com/jsonp/2498132/forms/192445333647656138/subscribe";
 
 const ghidForm = document.getElementById("ghid-form");
 
 if (ghidForm) {
     ghidForm.addEventListener("submit", async function (event) {
         event.preventDefault(); // oprește refresh-ul paginii
+
+        // 🍯 Honeypot: dacă e completat, e bot → ne prefacem că a mers
+        if (document.getElementById("honeypot").value !== "") {
+            ghidForm.reset();
+            showFormMessage("Mulțumesc! ✉️ Verifică-ți emailul.", "succes");
+            return;
+        }
 
         const emailInput = ghidForm.querySelector("input[type='email']");
         const submitBtn = ghidForm.querySelector("button");
@@ -38,7 +45,7 @@ if (ghidForm) {
 
             // Succes
             ghidForm.reset();
-            showFormMessage("Mulțumesc! ✉️ Verifică-ți emailul — ghidul e pe drum.", "succes");
+            showFormMessage("Aproape gata! Intră în emailul tău și apasă pe butonul verde de confirmare.", "succes");
 
         } catch (error) {
             showFormMessage("Ceva nu a mers. Încearcă din nou, te rog.", "eroare");
@@ -50,7 +57,7 @@ if (ghidForm) {
 }
 
 /* ------------------------------
-   2. MESAJ DE CONFIRMARE (apare sub formular)
+2. MESAJ DE CONFIRMARE (apare sub formular)
    ------------------------------ */
 
 function showFormMessage(text, tip) {

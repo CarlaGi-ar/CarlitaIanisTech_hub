@@ -603,54 +603,54 @@ a {
             FOOTER
 ==============================*/
 
-.footer{
-    background:var(--noapte-adanc);
-    color:var(--pergament);
-    padding:32px 0;
+.footer {
+    background: var(--noapte-adanc);
+    color: var(--pergament);
+    padding: 32px 0;
 }
 
-.footer-content{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:50px;
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
-.footer-brand{
-    font-family:"Fraunces",serif;
-    font-size:34px;
-    font-weight:700;
-    white-space:nowrap;
+.footer-brand {
+    font-family: "Fraunces", serif;
+    font-size: 34px;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
-.footer-brand span{
-    color:var(--chihlimbar);
+.footer-brand span {
+    color: var(--chihlimbar);
 }
 
-.footer-social{
-    list-style:none;
-    display:flex;
-    gap:34px;
-    padding:0;
-    margin:0;
+.footer-social {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-social a{
-    color:var(--chihlimbar);
-    text-decoration:none;
-    font-weight:700;
-    font-size:18px;
-    transition:.25s;
+.footer-social a {
+    color: var(--chihlimbar);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: .25s;
 }
 
-.footer-social a:hover{
-    color:#ffd27b;
+.footer-social a:hover {
+    color: #ffd27b;
 }
 
-.footer-copy{
-    font-size:17px;
-    color:rgba(255,249,240,.78);
-    white-space:nowrap;
+.footer-copy {
+    font-size: 17px;
+    color: rgba(255, 249, 240, .78);
+    white-space: nowrap;
 }
 
 /*==============================
@@ -659,7 +659,6 @@ a {
 
 @media (max-width: 900px) {
 
-    /* HERO — o singură coloană */
     .hero-grid {
         grid-template-columns: 1fr;
         gap: 44px;
@@ -671,14 +670,12 @@ a {
         margin: 0 auto;
     }
 
-    /* CARDURI ȘTIRI + PROMISIUNI + STATISTICI */
     .card-grid,
     .promisiuni-grid,
     .followers-grid {
         grid-template-columns: 1fr;
     }
 
-    /* POVESTEA MEA */
     .povestea-mea-grid {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -688,7 +685,6 @@ a {
         height: 420px;
     }
 
-    /* NAVIGAȚIE — nu mai iese din ecran */
     .header-bar {
         height: auto;
         flex-direction: column;
@@ -706,16 +702,34 @@ a {
         height: 56px;
     }
 
-    /* SECȚIUNI — mai puțin spațiu pe mobil */
     .section {
         padding-top: 56px;
         padding-bottom: 56px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        font-size: 28px;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-copy {
+        white-space: normal;
     }
 }
 
 @media (max-width: 480px) {
 
-    /* FORMULAR — inputul fix de 320px ieșea din ecran */
     .ghid-form input {
         width: 100%;
     }
@@ -729,27 +743,7 @@ a {
     }
 }
 
-.footer-content{
-    flex-direction:column;
-    gap:20px;
-    text-align:center;
-}
-
-.footer-brand{
-    font-size:28px;
-}
-
-.footer-social{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.footer-copy{
-    white-space:normal;
-}
-
-/* MESAJE FORMULAR */
+/* MESAJE FORMULAR — în afara media query, se aplică peste tot */
 .form-mesaj {
     margin-top: 14px;
     padding: 12px 20px;
