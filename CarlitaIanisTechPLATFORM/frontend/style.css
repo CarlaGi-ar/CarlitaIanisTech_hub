@@ -526,7 +526,7 @@ a {
     align-items: center;
 }
 
-.aboneazate h1 {
+.aboneazate h2 {
     font-size: clamp(34px, 4vw, 48px);
     max-width: 560px;
 }
@@ -761,4 +761,36 @@ a {
 .form-mesaj--eroare {
     background: var(--chihlimbar);
     color: var(--noapte-adanc);
+}
+
+/*despre-mine*/
+.despre-mine {
+    background: var(--pergament-2);
+}
+
+.despre-mine h2 {
+    color: var(--noapte);
+    font-size: clamp(38px, 4vw, 52px);
+}
+
+.despre-CarlitaIanisTech{
+    background: var(--bordo);
+    color: var(--alb-cald);
+}
+.despre-CarlitaIanisTech-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center
+
+}
+.despre-CarlitaIanisTech h2 {
+    font-size: clamp(34px, 4vw, 48px);
+    max-width: 560px;
+}
+.despre-CarlitaIanisTech .sub {
+    max-width: 620px;
+    font-size: 19px;
+    line-height: 1.55;
+
 }
