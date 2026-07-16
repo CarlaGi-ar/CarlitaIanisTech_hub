@@ -1,17 +1,141 @@
-<!--NAVIGATION BAR-->
-    <header class="site-header">
-        <div class="container header-bar">
-            <a href="index.html" class="nav-logo">
-                <img src="../assets/logo_carlita_ianis.png" alt="Carlita & Ianis Tech" class="logo-img">
-            </a>
+<!DOCTYPE html>
+<html lang="ro">
 
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="index.html">Acasă</a></li>
-                    <li><a href="povesteamea.html">Povestea mea</a></li>
-                    <li><a href="stiri.html">Știri din tech</a></li>
-                    <li><a href="securitate.html">Securitate Cibernetică</a></li>
-                </ul>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursuri — Carlita & Ianis Tech</title>
+    <meta name="description"
+        content="Cursuri gratuite de programare, Inteligență Artificială și securitate online, pe înțelesul tău.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Alegreya+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--NAVIGATION BAR-->
+<header class="site-header">
+    <div class="container header-bar">
+        <a href="index.html" class="nav-logo">
+            <img src="../assets/logo_carlita_ianis.png" alt="Carlita & Ianis Tech" class="logo-img">
+        </a>
+
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="povesteamea.html">Povestea mea</a></li>
+                <li><a href="stiri.html">Știri din tech</a></li>
+                <li><a href="securitate.html">Securitate Cibernetică</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!--HERO-->
+    <section class="hero">
+        <div class="hero-banner">
+            <img src="../assets/banner_red.png" alt="Carlita & Ianis Tech">
         </div>
-    </header>
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="eyebrow">CURSURI</p>
+                <h1>Cursuri <em>în limba ta, pe înțelesul tău</em>.</h1>
+                <p class="sub"><!--TODO: subtitlu--></p>
+
+                <div class="hero butoane">
+                    <a href="#programare" class="btn btn-amber">Lecția 1 PYTHON</a>
+                    <a href="#securitate" class="btn btn-amber">Lecția 1 SECURITATE ONLINE</a>
+                    <a href="#inteligenta-artificiala" class="btn btn-amber">Lecția 1 IA</a>
+                </div>
+            </div>
+            <div class="hero-photo-frame">
+                <img src="../assets/carla-poza2.jpeg" alt="Carla" class="hero-photo">
+            </div>
+        </div>
+    </section>
+
+    <!--BODY-CURSURI DE PROGRAMARE-->
+    <div class="motif-border" aria-hidden="true"></div>
+    <section id="programare" class="cursuri-programare section">
+        <div class="container programare-grid">
+            <div class="python">
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--BODY-CURSURI DE SECURITATE CIBERNETICA-->
+    <div class="motif-border" aria-hidden="true"></div>
+    <section id="securitate" class="securitate-cibernetica section">
+        <div class="container securitate-grid">
+        </div>
+    </section>
+
+    <!--BODY-CURSURI DE INTELIGENTA ARTIFICIALA-->
+    <div class="motif-border" aria-hidden="true"></div>
+    <section id="inteligenta-artificiala" class="inteligenta-artificiala section">
+
+    </section>
+
+    <!--BODY- ABONEAZATE-->
+    <div class="motif-border" aria-hidden="true"></div>
+    <section id="aboneazate" class="aboneazate section">
+        <div class="container aboneazate-inner">
+
+            <div class="aboneazate-text">
+                <p class="eyebrow">ABONEAZĂ-TE</p>
+                <h2>FII PRINTRE PRIMII CARE AFLĂ DE NOILE CURSURI</h2>
+                <p class="sub">
+                    Vei primi un email săptămânal cu numele ultimelor cursuri și ultimul ghid de protecție
+                    cibernetică pentru tine și familia ta.
+                </p>
+            </div>
+
+            <div class="aboneazate-form">
+                <form class="ghid-form" id="ghid-form">
+                    <!--Honeypot — bonusul anti-boți-->
+                    <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off"
+                        style="position:absolute; left:-9999px;" aria-hidden="true">
+                    <input type="email" placeholder="Adresa ta de email" required>
+                    <button type="submit" class="btn btn-amber">Vreau să fiu în comunitate</button>
+
+                    <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut. Te poți dezabona
+                        oricând.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container footer-content">
+
+        <div class="footer-brand">
+            <strong>Carlita <span>&</span> Ianis Tech</strong>
+        </div>
+
+        <ul class="footer-social">
+            <li><a href="https://www.tiktok.com/@carlitaianistech?is_from_webapp=1&sender_device=pc" target="_blank"
+                    rel="noopener noreferrer">TikTok</a></li>
+            <li><a href="https://www.youtube.com/@carlita_ianis_tech" target="_blank"
+                    rel="noopener noreferrer">YouTube</a></li>
+            <li><a href="https://www.instagram.com/carlita.ianis.tech/" target="_blank"
+                    rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61580936638582" target="_blank"
+                    rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+
+        <div class="footer-copy">
+            Cusut cu grijă, în Plymouth &amp; Pojoga · © 2026
+        </div>
+
+    </div>
+</footer>
+</body>
+
+</html>
