@@ -773,21 +773,23 @@ a {
     font-size: clamp(38px, 4vw, 52px);
 }
 
-.despre-CarlitaIanisTech{
+.despre-CarlitaIanisTech {
     background: var(--bordo);
     color: var(--alb-cald);
 }
+
 .despre-CarlitaIanisTech-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
     align-items: center
-
 }
+
 .despre-CarlitaIanisTech h2 {
     font-size: clamp(34px, 4vw, 48px);
     max-width: 560px;
 }
+
 .despre-CarlitaIanisTech .sub {
     max-width: 620px;
     font-size: 19px;
@@ -795,14 +797,120 @@ a {
 
 
 }
+/*===== CURSURI =====*/
 
-/*cursuri*/
-.cursuri-programare{
+/* Fundaluri alternate pe secțiuni */
+.cursuri-programare {
     background: var(--pergament-2);
 }
-.securitate-cibernetica{
+
+.securitate-cibernetica {
     background: var(--alb-cald);
 }
-.inteligenta-artificiala{
+
+.inteligenta-artificiala {
     background: var(--pergament);
+}
+
+/* Toggle "Vezi lecțiile" — ascundem săgeata default a lui details */
+.curs-toggle::-webkit-details-marker {
+    display: none;
+}
+
+.curs-toggle {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Chevron — starea normală (închis) */
+.chevron {
+    display: inline-block;              /* fără asta, transform nu funcționează */
+    transition: transform 0.3s ease;    /* rotație lină, nu bruscă */
+}
+
+/* Chevron — starea deschisă */
+details[open] .chevron {
+    transform: rotate(180deg);          /* ▼ devine ▲ */
+}
+
+/* Rândul unei lecții în listă */
+.lectie-rand {
+    display: flex;
+    justify-content: space-between;   /* titlul la stânga, durata la dreapta */
+    align-items: center;
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    margin-top: 0.6rem;
+    background: var(--alb-cald);
+    border: 1px solid var(--pergament-2);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.lectie-rand:hover {
+    background: var(--pergament);
+    transform: translateX(4px);       /* mică alunecare la hover — subtil, elegant */
+}
+
+.lectie-durata {
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+/*===== DIALOG LECȚIE =====*/
+
+dialog {
+    /* dialog e centrat automat de browser — noi doar îl îmbrăcăm frumos */
+    width: min(90vw, 480px);          /* max 480px, dar pe telefon 90% din ecran */
+    max-height: 85vh;            /* niciodată mai înalt de 85% din ecran */
+    overflow-y: auto;            /* dacă nu încape, apare scroll ÎN dialog */
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: var(--alb-cald);
+    text-align: center;               /* totul pe mijloc, cum ai vrut */
+}
+
+/* Fundalul întunecat din spatele dialogului */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* Videoclipul — vertical (Shorts), centrat, mai mare */
+dialog iframe {
+    width: 250px;
+    aspect-ratio: 9 / 16;             /* format vertical de Shorts */
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 1rem;              /* auto stânga-dreapta = centrat */
+}
+
+/* Details din dialog — săgeata rămâne lizibilă și centrat arată curat */
+dialog details {
+    margin: 0.6rem 0;
+}
+
+dialog summary {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Butonul Închide, centrat */
+dialog form[method="dialog"] {
+    margin-top: 1rem;
+}
+/*pentru telefon */
+@media (max-width: 600px) {
+    .lectie-rand {
+        flex-direction: column;      /* titlul sus, durata dedesubt */
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
 }

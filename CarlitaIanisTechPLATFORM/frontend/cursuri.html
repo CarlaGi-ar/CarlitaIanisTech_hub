@@ -15,127 +15,225 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!--NAVIGATION BAR-->
-<header class="site-header">
-    <div class="container header-bar">
-        <a href="index.html" class="nav-logo">
-            <img src="../assets/logo_carlita_ianis.png" alt="Carlita & Ianis Tech" class="logo-img">
-        </a>
+<body>
+    <!--NAVIGATION BAR-->
+    <header class="site-header">
+        <div class="container header-bar">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/logo_carlita_ianis.png" alt="Carlita & Ianis Tech" class="logo-img">
+            </a>
 
-        <nav class="nav">
-            <ul class="nav-links">
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="povesteamea.html">Povestea mea</a></li>
-                <li><a href="stiri.html">Știri din tech</a></li>
-                <li><a href="securitate.html">Securitate Cibernetică</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <!--HERO-->
-    <section class="hero">
-        <div class="hero-banner">
-            <img src="../assets/banner_red.png" alt="Carlita & Ianis Tech">
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="povesteamea.html">Povestea mea</a></li>
+                    <li><a href="stiri.html">Știri din tech</a></li>
+                    <li><a href="securitate.html">Securitate Cibernetică</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <p class="eyebrow">CURSURI</p>
-                <h1>Cursuri <em>în limba ta, pe înțelesul tău</em>.</h1>
-                <p class="sub"><!--TODO: subtitlu--></p>
+    </header>
 
-                <div class="hero butoane">
-                    <a href="#programare" class="btn btn-amber">Lecția 1 PYTHON</a>
-                    <a href="#securitate" class="btn btn-amber">Lecția 1 SECURITATE ONLINE</a>
-                    <a href="#inteligenta-artificiala" class="btn btn-amber">Lecția 1 IA</a>
+    <main>
+        <!--HERO-->
+        <section class="hero">
+            <div class="hero-banner">
+                <img src="../assets/banner_red.png" alt="Carlita & Ianis Tech">
+            </div>
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">CURSURI</p>
+                    <h1>Cursuri <em>în limba ta, pe înțelesul tău</em>.</h1>
+                    <p class="sub"><!--TODO: subtitlu--></p>
+
+                    <div class="hero butoane">
+                        <a href="#programare" class="btn btn-amber">Lecția 1 PYTHON</a>
+                        <a href="#securitate" class="btn btn-amber">Lecția 1 SECURITATE ONLINE</a>
+                        <a href="#inteligenta-artificiala" class="btn btn-amber">Lecția 1 IA</a>
+                    </div>
+                </div>
+                <div class="hero-photo-frame">
+                    <img src="../assets/carla-poza2.jpeg" alt="Carla" class="hero-photo">
                 </div>
             </div>
-            <div class="hero-photo-frame">
-                <img src="../assets/carla-poza2.jpeg" alt="Carla" class="hero-photo">
+        </section>
+
+        <!--BODY-CURSURI DE PROGRAMARE-->
+        <div class="motif-border" aria-hidden="true"></div>
+        <section id="programare" class="cursuri-programare section">
+            <div class="container programare-grid">
+                <div class="python">
+
+                    <h3>Cursuri de programare</h3>
+                    <p>Fiecare lecție îți arată cât durează și se termină cu un mic quiz.
+                        Sub fiecare lecție găsești exerciții pentru tine, iar dacă nu îți iese
+                        perfect, nicio problemă: soluția este chiar alături.</p>
+                    <p>Nu îți fie frică să experimentezi sa schimbi cuvintele sau ordinea
+                        comenzilor. Ce se poate întâmpla? 🙂 <strong>Repetiția este mama învățării!</strong></p>
+
+                    <details>
+                        <summary class="curs-toggle btn btn-amber">Vezi lecțiile Python
+                            <span class="chevron">▼</span>
+                        </summary>
+
+                        <div class="lectii-lista">
+
+                            <!-- BUTONUL LECȚIEI — ce vede omul în listă -->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-1').showModal()">
+                                <span class="lectie-titlu">1. De ce să înveți Python?</span>
+                                <span class="lectie-durata">Durată: 02:01</span>
+                            </button>
+
+                        </div>
+
+                        <!-- DIALOGUL LECȚIEI — pop-up-ul care se deschide -->
+                        <dialog id="lectia-python-1">
+                            <!-- 1. Video încorporat direct în pagină -->
+                            <iframe src="https://www.youtube.com/embed/wUE5S75Zv-g" title="De ce să înveți Python?"
+                                allowfullscreen></iframe>
+
+                            <!-- 2. Titlu + descriere + durată -->
+                            <h4>De ce să înveți Python?</h4>
+                            <p>Python este cel mai prietenos limbaj pentru începători, dar și una
+                                dintre cele mai puternice unelte din Inteligența Artificială,
+                                data science și automatizări.</p>
+                            <p class="lectie-durata">Durată: 02:01</p>
+
+                            <!-- 3. Scriptul lecției, pliat -->
+                            <details>
+                                <summary>Vezi scriptul lecției</summary>
+                                <p>Dacă vrei să înveți programare, începe cu Python. E cel mai prietenos limbaj creat
+                                    vreodată. Știai că Python e unul dintre limbajele de programare cele mai bine
+                                    plătite în 2025?</p>
+                                <p>Python are 3 super-puteri: Unu - E ușor de citit. 👀 Chiar dacă nu ai scris cod
+                                    niciodată, poți înțelege ce face. Doi - Funcționează peste tot. 💻 Windows, Mac,
+                                    Linux - același cod, zero probleme. Trei - Comunitate uriașă. 🌍 Orice problemă ai,
+                                    cineva a mai rezolvat-o și ți-o explică gratis.</p>
+                                <p>Python original este doar o „descriere”, dar versiunea pe care o folosim toți se
+                                    numește CPython – creată de Guido van Rossum în 1989.
+                                    Mai există și Jython (pentru Java), IronPython (pentru .NET), PyPy (mai rapid),
+                                    MicroPython (pentru microcontrolere) și Cython.
+                                </p>
+                                <p>Dar ce poți face cu Python?
+                                    • Web development
+                                    • Machine learning și inteligență artificială
+                                    • Data science
+                                    • Automatizări
+                                    • Securitate
+                                    • Chiar și scripturile din Excel acum folosesc Python!
+                                    • Aplicații, jocuri, teste, scripturi… Practic, dacă lucrezi cu date sau vrei să
+                                    automatizezi ceva - Python e răspunsul."
+                                </p>
+                                <p>Python are trei straturi:
+                                    Lexicon – vocabularul limbajului: cuvinte rezervate („if”, „class”), nume de
+                                    variabile, comentarii, valori, operatori.
+                                    Syntax – regulile de scriere: indentare, spațiere, paranteze, lipsa semicolonului la
+                                    final.
+                                    Dacă greșești aici → primești „syntax error”.
+                                    Semantics – sensul real: ce face codul tău.
+                                    Aici intră variabile, funcții, logica, fluxul programului.
+                                </p>
+                                <p>Python e ușa de intrare în lumea AI, al automatizărilor și al codingului modern.</p>
+                            </details>
+
+                            <!-- 4. Exercițiul (link Google Drive) -->
+                            <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                    📝 Descarcă exercițiul</a></p>
+
+                            <!-- 5. Soluția, pliată (link GitHub) -->
+                            <details>
+                                <summary>Vezi soluția</summary>
+                                <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                        Soluția pe GitHub</a></p>
+                            </details>
+
+                            <!-- 6. Feedback -->
+                            <p class="lectie-feedback">Ți-a plăcut lecția?
+                                <a href="https://youtu.be/wUE5S75Zv-g" target="_blank" rel="noopener noreferrer">Lasă un
+                                    like sau un comentariu pe YouTube</a> 💛
+                            </p>
+
+                            <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                            <form method="dialog">
+                                <button class="btn btn-amber">Închide</button>
+                            </form>
+
+                        </dialog>
+                    </details>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--BODY-CURSURI DE PROGRAMARE-->
-    <div class="motif-border" aria-hidden="true"></div>
-    <section id="programare" class="cursuri-programare section">
-        <div class="container programare-grid">
-            <div class="python">
-
+        <!--BODY-CURSURI DE SECURITATE CIBERNETICA-->
+        <div class="motif-border" aria-hidden="true"></div>
+        <section id="securitate" class="securitate-cibernetica section">
+            <div class="container securitate-grid">
             </div>
-        </div>
+        </section>
 
+        <!--BODY-CURSURI DE INTELIGENTA ARTIFICIALA-->
+        <div class="motif-border" aria-hidden="true"></div>
+        <section id="inteligenta-artificiala" class="inteligenta-artificiala section">
 
-    </section>
+        </section>
 
-    <!--BODY-CURSURI DE SECURITATE CIBERNETICA-->
-    <div class="motif-border" aria-hidden="true"></div>
-    <section id="securitate" class="securitate-cibernetica section">
-        <div class="container securitate-grid">
-        </div>
-    </section>
+        <!--BODY- ABONEAZATE-->
+        <div class="motif-border" aria-hidden="true"></div>
+        <section id="aboneazate" class="aboneazate section">
+            <div class="container aboneazate-inner">
 
-    <!--BODY-CURSURI DE INTELIGENTA ARTIFICIALA-->
-    <div class="motif-border" aria-hidden="true"></div>
-    <section id="inteligenta-artificiala" class="inteligenta-artificiala section">
+                <div class="aboneazate-text">
+                    <p class="eyebrow">ABONEAZĂ-TE</p>
+                    <h2>FII PRINTRE PRIMII CARE AFLĂ DE NOILE CURSURI</h2>
+                    <p class="sub">
+                        Vei primi un email săptămânal cu numele ultimelor cursuri și ultimul ghid de protecție
+                        cibernetică pentru tine și familia ta.
+                    </p>
+                </div>
 
-    </section>
+                <div class="aboneazate-form">
+                    <form class="ghid-form" id="ghid-form">
+                        <!--Honeypot — bonusul anti-boți-->
+                        <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off"
+                            style="position:absolute; left:-9999px;" aria-hidden="true">
+                        <input type="email" placeholder="Adresa ta de email" required>
+                        <button type="submit" class="btn btn-amber">Vreau să fiu în comunitate</button>
 
-    <!--BODY- ABONEAZATE-->
-    <div class="motif-border" aria-hidden="true"></div>
-    <section id="aboneazate" class="aboneazate section">
-        <div class="container aboneazate-inner">
+                        <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut. Te poți
+                            dezabona
+                            oricând.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <div class="aboneazate-text">
-                <p class="eyebrow">ABONEAZĂ-TE</p>
-                <h2>FII PRINTRE PRIMII CARE AFLĂ DE NOILE CURSURI</h2>
-                <p class="sub">
-                    Vei primi un email săptămânal cu numele ultimelor cursuri și ultimul ghid de protecție
-                    cibernetică pentru tine și familia ta.
-                </p>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <strong>Carlita <span>&</span> Ianis Tech</strong>
             </div>
 
-            <div class="aboneazate-form">
-                <form class="ghid-form" id="ghid-form">
-                    <!--Honeypot — bonusul anti-boți-->
-                    <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off"
-                        style="position:absolute; left:-9999px;" aria-hidden="true">
-                    <input type="email" placeholder="Adresa ta de email" required>
-                    <button type="submit" class="btn btn-amber">Vreau să fiu în comunitate</button>
+            <ul class="footer-social">
+                <li><a href="https://www.tiktok.com/@carlitaianistech?is_from_webapp=1&sender_device=pc" target="_blank"
+                        rel="noopener noreferrer">TikTok</a></li>
+                <li><a href="https://www.youtube.com/@carlita_ianis_tech" target="_blank"
+                        rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="https://www.instagram.com/carlita.ianis.tech/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61580936638582" target="_blank"
+                        rel="noopener noreferrer">Facebook</a></li>
+            </ul>
 
-                    <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut. Te poți dezabona
-                        oricând.</p>
+            <div class="footer-copy">
+                Cusut cu grijă, în Plymouth &amp; Pojoga · © 2026
             </div>
+
         </div>
-    </section>
-</main>
-
-<!--FOOTER-->
-<footer class="footer">
-    <div class="container footer-content">
-
-        <div class="footer-brand">
-            <strong>Carlita <span>&</span> Ianis Tech</strong>
-        </div>
-
-        <ul class="footer-social">
-            <li><a href="https://www.tiktok.com/@carlitaianistech?is_from_webapp=1&sender_device=pc" target="_blank"
-                    rel="noopener noreferrer">TikTok</a></li>
-            <li><a href="https://www.youtube.com/@carlita_ianis_tech" target="_blank"
-                    rel="noopener noreferrer">YouTube</a></li>
-            <li><a href="https://www.instagram.com/carlita.ianis.tech/" target="_blank"
-                    rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=61580936638582" target="_blank"
-                    rel="noopener noreferrer">Facebook</a></li>
-        </ul>
-
-        <div class="footer-copy">
-            Cusut cu grijă, în Plymouth &amp; Pojoga · © 2026
-        </div>
-
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>
