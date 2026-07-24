@@ -44,9 +44,10 @@
                 <div class="hero-text">
                     <p class="eyebrow">CURSURI</p>
                     <h1>Cursuri <em>în limba ta, pe înțelesul tău</em>.</h1>
-                    <p class="sub"><!--TODO: subtitlu--></p>
+                    <p class="sub">Lecții scurte, exerciții și soluții. Înveți în ritmul tău, fără grabă și gratuite.
+                    </p>
 
-                    <div class="hero butoane">
+                    <div class="hero-butoane">
                         <a href="#programare" class="btn btn-amber">Lecția 1 PYTHON</a>
                         <a href="#securitate" class="btn btn-amber">Lecția 1 SECURITATE ONLINE</a>
                         <a href="#inteligenta-artificiala" class="btn btn-amber">Lecția 1 IA</a>
@@ -77,96 +78,2884 @@
                         </summary>
 
                         <div class="lectii-lista">
-
-                            <!-- BUTONUL LECȚIEI — ce vede omul în listă -->
+                            <!--LECTIA 1-->
+                            <!-- BUTONUL LECȚIEI -->
                             <button type="button" class="lectie-rand"
                                 onclick="document.getElementById('lectia-python-1').showModal()">
                                 <span class="lectie-titlu">1. De ce să înveți Python?</span>
                                 <span class="lectie-durata">Durată: 02:01</span>
                             </button>
 
+                            <!-- LECTIA 2   -->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-2').showModal()">
+                                <span class="lectie-titlu">2.Instalează Python! </span>
+                                <span class="lectie-durata">Durată: 03:15</span>
+                            </button>
+
+                            <!--LECTIA 3-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-3').showModal()">
+                                <span class="lectie-titlu">3. Sintaxa si variabile </span>
+                                <span class="lectie-durata">Durată: 02:38</span>
+                            </button>
+
+                            <!--Lectia 4-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-4').showModal()">
+                                <span class="lectie-titlu">4. Keywords și Tipurile de Date </span>
+                                <span class="lectie-durata">Durată: 04:58</span>
+                            </button>
+
+                            <!--Lectia 5-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-5').showModal()">
+                                <span class="lectie-titlu">5. Tipuri de Date: Numere si Boolean </span>
+                                <span class="lectie-durata">Durată: 04:40</span>
+                            </button>
+
+                            <!--Lectia 6-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-6').showModal()">
+                                <span class="lectie-titlu">6. Tipuri de Date: Strings</span>
+                                <span class="lectie-durata">Durată: 03:48</span>
+                            </button>
+
+                            <!--Lectia 7-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-7').showModal()">
+                                <span class="lectie-titlu">7. Ce sunt Bytes si Bytearray? </span>
+                                <span class="lectie-durata">Durată: 03:08</span>
+                            </button>
+
+                            <!--Lectia 8-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-8').showModal()">
+                                <span class="lectie-titlu">8. Dicționarii si Seturi </span>
+                                <span class="lectie-durata">Durată: 03:32</span>
+                            </button>
+
+                            <!--Lectia 9-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-9').showModal()">
+                                <span class="lectie-titlu">9. Condiții in Python </span>
+                                <span class="lectie-durata">Durată: 04:02</span>
+                            </button>
+
+                            <!--Lectia 10-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-10').showModal()">
+                                <span class="lectie-titlu">10. Bucla in Python </span>
+                                <span class="lectie-durata">Durată: 00:00</span>
+                            </button>
+
+                            <!--Lectia 11-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-11').showModal()">
+                                <span class="lectie-titlu">11. Funcții in Python </span>
+                                <span class="lectie-durata">Durată: 00:00</span>
+                            </button>
+
+                            <!--Lectia 12-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-12').showModal()">
+                                <span class="lectie-titlu">12.Clase OOP </span>
+                                <span class="lectie-durata">Durată: 00:00</span>
+                            </button>
+
+                            <!--Lectia 13-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-13').showModal()">
+                                <span class="lectie-titlu">13.Importuri si Module </span>
+                                <span class="lectie-durata">Durată: 00:00</span>
+                            </button>
+
+                            <!--Lectia 14-->
+                            <button type="button" class="lectie-rand"
+                                onclick="document.getElementById('lectia-python-14').showModal()">
+                                <span class="lectie-titlu">14. Recapitulare </span>
+                                <span class="lectie-durata">Durată: 00:00</span>
+                            </button>
                         </div>
 
-                        <!-- DIALOGUL LECȚIEI — pop-up-ul care se deschide -->
-                        <dialog id="lectia-python-1">
-                            <!-- 1. Video încorporat direct în pagină -->
-                            <iframe src="https://www.youtube.com/embed/wUE5S75Zv-g" title="De ce să înveți Python?"
-                                allowfullscreen></iframe>
-
-                            <!-- 2. Titlu + descriere + durată -->
-                            <h4>De ce să înveți Python?</h4>
-                            <p>Python este cel mai prietenos limbaj pentru începători, dar și una
-                                dintre cele mai puternice unelte din Inteligența Artificială,
-                                data science și automatizări.</p>
-                            <p class="lectie-durata">Durată: 02:01</p>
-
-                            <!-- 3. Scriptul lecției, pliat -->
-                            <details>
-                                <summary>Vezi scriptul lecției</summary>
-                                <p>Dacă vrei să înveți programare, începe cu Python. E cel mai prietenos limbaj creat
-                                    vreodată. Știai că Python e unul dintre limbajele de programare cele mai bine
-                                    plătite în 2025?</p>
-                                <p>Python are 3 super-puteri: Unu - E ușor de citit. 👀 Chiar dacă nu ai scris cod
-                                    niciodată, poți înțelege ce face. Doi - Funcționează peste tot. 💻 Windows, Mac,
-                                    Linux - același cod, zero probleme. Trei - Comunitate uriașă. 🌍 Orice problemă ai,
-                                    cineva a mai rezolvat-o și ți-o explică gratis.</p>
-                                <p>Python original este doar o „descriere”, dar versiunea pe care o folosim toți se
-                                    numește CPython – creată de Guido van Rossum în 1989.
-                                    Mai există și Jython (pentru Java), IronPython (pentru .NET), PyPy (mai rapid),
-                                    MicroPython (pentru microcontrolere) și Cython.
-                                </p>
-                                <p>Dar ce poți face cu Python?
-                                    • Web development
-                                    • Machine learning și inteligență artificială
-                                    • Data science
-                                    • Automatizări
-                                    • Securitate
-                                    • Chiar și scripturile din Excel acum folosesc Python!
-                                    • Aplicații, jocuri, teste, scripturi… Practic, dacă lucrezi cu date sau vrei să
-                                    automatizezi ceva - Python e răspunsul."
-                                </p>
-                                <p>Python are trei straturi:
-                                    Lexicon – vocabularul limbajului: cuvinte rezervate („if”, „class”), nume de
-                                    variabile, comentarii, valori, operatori.
-                                    Syntax – regulile de scriere: indentare, spațiere, paranteze, lipsa semicolonului la
-                                    final.
-                                    Dacă greșești aici → primești „syntax error”.
-                                    Semantics – sensul real: ce face codul tău.
-                                    Aici intră variabile, funcții, logica, fluxul programului.
-                                </p>
-                                <p>Python e ușa de intrare în lumea AI, al automatizărilor și al codingului modern.</p>
-                            </details>
-
-                            <!-- 4. Exercițiul (link Google Drive) -->
-                            <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
-                                    📝 Descarcă exercițiul</a></p>
-
-                            <!-- 5. Soluția, pliată (link GitHub) -->
-                            <details>
-                                <summary>Vezi soluția</summary>
-                                <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
-                                        Soluția pe GitHub</a></p>
-                            </details>
-
-                            <!-- 6. Feedback -->
-                            <p class="lectie-feedback">Ți-a plăcut lecția?
-                                <a href="https://youtu.be/wUE5S75Zv-g" target="_blank" rel="noopener noreferrer">Lasă un
-                                    like sau un comentariu pe YouTube</a> 💛
-                            </p>
-
-                            <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
-                            <form method="dialog">
-                                <button class="btn btn-amber">Închide</button>
-                            </form>
-
-                        </dialog>
                     </details>
 
+                    <!-- DIALOGUL LECȚIEI 1 -->
+                    <dialog id="lectia-python-1">
+                        <!-- 1. Video încorporat direct în pagină -->
+                        <iframe src="https://www.youtube.com/embed/wUE5S75Zv-g" title="De ce să înveți Python?"
+                            allowfullscreen></iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>De ce să înveți Python?</h3>
+                        <p>Python este cel mai prietenos limbaj pentru începători, dar și una
+                            dintre cele mai puternice unelte din Inteligența Artificială,
+                            data science și automatizări.</p>
+                        <p class="lectie-durata">Durată: 02:01</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <p>Dacă vrei să înveți programare, începe cu Python. E cel mai prietenos limbaj creat
+                                vreodată. Știai că Python e unul dintre limbajele de programare cele mai bine
+                                plătite în 2025?</p>
+                            <p>Python are 3 super-puteri: Unu - E ușor de citit. 👀 Chiar dacă nu ai scris cod
+                                niciodată, poți înțelege ce face. Doi - Funcționează peste tot. 💻 Windows, Mac,
+                                Linux - același cod, zero probleme. Trei - Comunitate uriașă. 🌍 Orice problemă ai,
+                                cineva a mai rezolvat-o și ți-o explică gratis.</p>
+                            <p>Python original este doar o „descriere”, dar versiunea pe care o folosim toți se
+                                numește CPython – creată de Guido van Rossum în 1989.
+                                Mai există și Jython (pentru Java), IronPython (pentru .NET), PyPy (mai rapid),
+                                MicroPython (pentru microcontrolere) și Cython.
+                            </p>
+                            <p>Dar ce poți face cu Python?
+                                • Web development
+                                • Machine learning și inteligență artificială
+                                • Data science
+                                • Automatizări
+                                • Securitate
+                                • Chiar și scripturile din Excel acum folosesc Python!
+                                • Aplicații, jocuri, teste, scripturi… Practic, dacă lucrezi cu date sau vrei să
+                                automatizezi ceva - Python e răspunsul."
+                            </p>
+                            <p>Python are trei straturi:
+                                Lexicon – vocabularul limbajului: cuvinte rezervate („if”, „class”), nume de
+                                variabile, comentarii, valori, operatori.
+                                Syntax – regulile de scriere: indentare, spațiere, paranteze, lipsa semicolonului la
+                                final.
+                                Dacă greșești aici → primești „syntax error”.
+                                Semantics – sensul real: ce face codul tău.
+                                Aici intră variabile, funcții, logica, fluxul programului.
+                            </p>
+                            <p>Python e ușa de intrare în lumea AI, al automatizărilor și al codingului modern.</p>
+                        </details>
+
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=wUE5S75Zv-g&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=13"
+                                target="_blank" rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+
+                    </dialog>
+
+
+                    <!-- DIALOGUL LECȚIEI 2 -->
+                    <dialog id="lectia-python-2">
+                        <iframe src="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ"
+                            title="Cum Instalezi și Rulezi Python – Primii tăi Pași în Programare" allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Cum sa intalezi si sa rulezi Python</h3>
+                        <p>În acest video înveți cum să instalezi Python, cum îl rulezi din terminal, cum intri în
+                            modul interactiv (REPL) și cum scrii primul tău program. Simplu, clar și perfect pentru
+                            începători.</p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <p>Astăzi înveți: cum instalezi și rulezi Python pe calculatorul tău.
+                                Dacă ai reușit asta, restul lecțiilor devin de zece ori mai ușoare.”</p>
+                            <p>Python merge pe Windows, macOS, Linux și chiar pe alte sisteme.
+                                Tot ce trebuie să faci este să intri pe site-ul oficial: python.org/downloads
+                                Acolo alegi versiunea pentru calculatorul tău – 32-bit sau 64-bit – și apeși
+                                Download.</p>
+                            <p>După instalare, deschizi terminalul sau Command Prompt și scrii:
+                                Pe Windows:
+                                py -V
+                                Pe macOS și Linux:
+                                python3 -V
+                                Dacă vezi ceva de genul Python 3.13.x, înseamnă că totul e instalat corect.</p>
+                            <p>Dacă folosești:
+                                • macOS → poți instala Python și cu Homebrew
+                                • Linux → îl iei direct din managerul de pachete
+                                • Windows → poți instala și din Microsoft Store, dar verifică să fie de la Python
+                                Software Foundation
+                                Și da, există și Anaconda sau Miniconda, dacă vrei Python cu multe librării gata
+                                instalate</p>
+                            <p>Hai să testăm dacă funcționează cu adevărat.
+                                Deschide terminalul și scrie:
+                                python3
+                                În Windows poți folosi și:
+                                py
+                                Dacă vezi trei săgeți >>>, înseamnă că ai intrat în modul interactiv Python, numit
+                                și REPL.</p>
+                            <p>Și acum scriem primul tău cod:
+
+                                Apasă Enter.
+                                Dacă apare Hello, World! — felicitări, tocmai ai rulat primul tău program!”
+                                Cum ieși din Python]
+                                Ca să ieși din modul interactiv scrii:
+                                exit()
+                                sau
+                                • Ctrl + D pe macOS/Linux
+                                • Ctrl + Z + Enter pe Windows”
+                            </p>
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=htR4qnurR2U&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=11"
+                                target="_blank" rel="noopener noreferrer">Lasă un like sau un comentariu pe YouTube</a>
+                            💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+                    <!-- DIALOGUL LECȚIEI 3 -->
+                    <dialog id="lectia-python-3">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/n3vDd22fdgc?si=MHxRDArfm860lDHj"
+                            title="Sintaxa de bază în Python" allowfullscreen></iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Sintaxa de Bază (Comentarii, Variabile si Reguli)</h3>
+                        <p>În această lecție învățăm sintaxa de bază a Python: comentarii, variabile, reguli de scriere
+                            și exemple simple.</p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <p>Astăzi învățăm împreună bazele sintaxei Python. Fără ele nu putem scrie programe
+                                reale.
+                                Vorbim despre comentarii, variabile, nume corecte și regulile simple care fac Python
+                                atât de ușor.
+                            </p>
+                            <p>Comentariile sunt bucăți de text care trăiesc în cod, dar Python le ignoră complet.
+                                Le folosim ca să explicăm ce face codul sau de ce l-am scris așa.
+                                Ca să scrii un comentariu, pui un hashtag (#) înainte:
+                                # Acesta este un comentariu în Python
+                                Poți face și comentarii pe aceeași linie:
+                                greeting = "Hello" # acest text este ignorat de Python
+                                Comentariile trebuie să fie scurte și la obiect — cam sub 72 de caractere.
+                                Dacă e prea lung, îl împarți în două linii:
+                                # Acesta este un comentariu lung
+                                # împărțit pe două linii.
+                            </p>
+                            <p>O variabilă este un nume pe care îl dai unei valori. Este ca o cutie în care pui
+                                ceva.
+
+                                Sintaxa este foarte simplă:
+
+                                ```python
+                                nume_variabila = valoare
+                                Exemple:
+                                first_num = 1
+                                numbers = [1, 2, 3, 4, 5]
+                                Poți vedea ce ai în variabilă doar scriind numele ei:
+                                numbers
+                                Python permite și caractere Unicode:
+                                π = 3.14
+                                Dar în practică, folosește doar litere, cifre și underscore — este cel mai clar și
+                                cel mai profesionist.”
+                            </p>
+                            <p>Variabilele nu pot începe cu cifre.
+                                Uite un exemplu greșit:
+                                1rst_num = 1
+                                Python o să dea:
+                                SyntaxError
+                                În schimb:
+                                first_num = 1
+                                funcționează perfect.
+                                Regula generală:
+                                • folosește litere, cifre și _
+                                • numele începe întotdeauna cu o literă
+                                • scrie-le în snake_case: adică litere mici + underscore
+                                Exemplu bun:
+                                user_age = 25
+                            </p>
+                            <p>Sintaxa Python este clară și gândită special pentru începători.
+                                Dacă poți citi engleza simplă, poți citi și Python.
+
+                                Tot ce scriem în Python trebuie să respecte câteva reguli:
+                                • comentariile încep cu #
+                                • variabilele au nume clare
+                                • numele nu pot începe cu cifre
+                                • codul trebuie să fie ușor de înțeles
+
+                                Dacă scrii cod clar, te vei felicita peste 6 luni când te întorci la el
+                            </p>
+                            <p>Asta a fost o lecție rapidă despre sintaxa Python: comentarii, variabile și reguli de
+                                bază.
+                                În următorul video învățăm tipurile de date și începem să lucrăm cu condiții și
+                                bucle.</p>
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=n3vDd22fdgc&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=10"
+                                target="_blank" rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+
+
+                    <!-- DIALOGUL LECȚIEI 4 -->
+                    <dialog id="lectia-python-4">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/GFQrxNdLkU4?si=E237RWXidGbNG7zB"
+                            title="YouTube video player" allowfullscreen></iframe>
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Keywords și Tipurile de Date</h3>
+                        <p>Acum învățăm două lucruri foarte importante în Python:
+                            keywords – cuvintele speciale ale limbajului,
+                            și tipurile de date – adică materialele din care e construit orice program
+                        </p>
+                        <p class="lectie-durata">Durată: 04:58</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+
+                            <h3>Introducere</h3>
+
+                            <p>Acum învățăm două lucruri foarte importante în Python:
+                                <strong>keywords</strong> – cuvintele speciale ale limbajului –
+                                și <strong>tipurile de date</strong>, adică materialele din care
+                                este construit orice program.
+                            </p>
+
+                            <h3>Keywords în Python</h3>
+
+                            <p>În Python există câteva cuvinte rezervate. Ele fac parte din limbaj
+                                și au un rol special.</p>
+
+                            <p>Nu le poți folosi ca nume de variabile, deoarece Python îți va da
+                                eroare.</p>
+
+                            <p>Ca să vezi lista completă, în terminal scrii:</p>
+
+                            <pre><code class="language-python">help("keywords")</code></pre>
+
+                            <p>Lista conține cuvinte precum:</p>
+
+                            <pre><code class="language-python">if, else, for, while, def, class, True, False,
+None, import, return, break, continue</code></pre>
+
+                            <p>Fiecare dintre ele are un rol clar în limbaj:</p>
+
+                            <ul>
+                                <li><code>if</code> – este folosit pentru condiții;</li>
+                                <li><code>for</code> – este folosit pentru bucle;</li>
+                                <li><code>def</code> – definește o funcție;</li>
+                                <li><code>class</code> – creează clase.</li>
+                            </ul>
+
+                            <p>
+                                Python mai are și <strong>soft keywords</strong>, care funcționează
+                                ca keywords numai în anumite situații. De exemplu:
+                                <code>match</code> și <code>case</code>.
+                            </p>
+
+                            <p>Le poți vedea folosind:</p>
+
+                            <pre><code class="language-python">import keyword print(keyword.kwlist) print(keyword.softkwlist)</code></pre>
+
+                            <h3>Ce sunt tipurile de date?</h3>
+
+                            <p>Tipurile de date sunt formele în care Python stochează informațiile.
+                                Gândește-te la ele ca la diferite feluri de cutii.</p>
+
+                            <h3>1. Numere</h3>
+
+                            <p>Numerele sunt folosite atunci când vrem să numărăm sau să calculăm
+                                ceva.</p>
+
+                            <pre><code class="language-python">a = 10 # int b = 3.14  # float c = 3 + 2j   # complex</code></pre>
+
+                            <p><strong>Exercițiu:</strong> salvează vârsta și câți bani ai, apoi
+                                afișează-le.</p>
+
+                            <pre><code class="language-python"># Program cu numere
+
+varsta = 10
+bani = 15.5
+
+print("Numele meu este Carlita")
+print("Am", varsta, "ani")
+print("Am", bani, "lei")</code></pre>
+
+                            <p><strong>Ce înveți:</strong></p>
+
+                            <ul>
+                                <li>numere;</li>
+                                <li>variabile;</li>
+                                <li>afișarea informațiilor.</li>
+                            </ul>
+
+                            <h3>2. Boolean</h3>
+
+                            <p>
+                                Boolean înseamnă doar două posibilități:
+                                <strong>adevărat</strong> sau <strong>fals</strong>,
+                                adică <code>True</code> sau <code>False</code>.
+                            </p>
+
+                            <p>
+                                <strong>Exercițiu:</strong> spune dacă plouă sau nu.
+                            </p>
+
+                            <pre><code class="language-python"># Program cu Boolean
+
+ploua = True
+
+print("Numele meu este Carlita")
+print("Plouă afară?")
+print(ploua)</code></pre>
+
+                            <p><strong>Ce înveți:</strong></p>
+
+                            <ul>
+                                <li><code>True</code> și <code>False</code>;</li>
+                                <li>cum păstrezi un răspuns de tip da sau nu;</li>
+                                <li>afișarea unei valori Boolean.</li>
+                            </ul>
+
+                            <h3>3. String</h3>
+
+                            <p>
+                                Un string este orice text: un nume, un cuvânt sau o propoziție.
+                                Textul este scris între ghilimele.
+                            </p>
+
+                            <p>
+                                <strong>Exercițiu:</strong> salvează numele și afișează un salut.
+                            </p>
+
+                            <pre><code class="language-python"># Program cu text
+
+nume = "Carlita"
+
+print("Salut!")
+print("Numele meu este", nume)</code></pre>
+
+                            <p><strong>Ce înveți:</strong></p>
+
+                            <ul>
+                                <li>cum păstrezi un text;</li>
+                                <li>folosirea ghilimelelor;</li>
+                                <li>afișarea textului.</li>
+                            </ul>
+
+                            <h3>4. Listă</h3>
+
+                            <p>
+                                O listă este ca o cutie în care poți pune mai multe lucruri.
+                            </p>
+
+                            <p>
+                                <strong>Exercițiu:</strong> creează o listă cu jucării.
+                            </p>
+
+                            <pre><code class="language-python"># Program cu listă
+
+jucarii = ["minge", "păpușă", "mașină"]
+
+print("Numele meu este Carlita")
+print("Jucăriile mele sunt:")
+print(jucarii)</code></pre>
+
+                            <p><strong>Ce înveți:</strong></p>
+
+                            <ul>
+                                <li>liste;</li>
+                                <li>mai multe valori într-o singură variabilă;</li>
+                                <li>afișarea unei liste.</li>
+                            </ul>
+
+                            <h3>5. Tuple</h3>
+
+                            <p>
+                                Un tuple este asemănător unei liste, dar valorile sale nu pot fi
+                                modificate după ce a fost creat.
+                            </p>
+
+                            <p>
+                                <strong>Exercițiu:</strong> salvează două culori preferate care nu
+                                se modifică.
+                            </p>
+
+                            <pre><code class="language-python"># Program cu tuple
+
+culori = ("roșu", "albastru")
+
+print("Numele meu este Carlita")
+print("Culorile mele preferate sunt:")
+print(culori)</code></pre>
+
+                            <p><strong>Ce înveți:</strong></p>
+
+                            <ul>
+                                <li>date fixe;</li>
+                                <li>diferența dintre o listă și un tuple.</li>
+                            </ul>
+
+                            <h3>6. Dicționar</h3>
+
+                            <p>
+                                Un dicționar păstrează informațiile sub forma
+                                <strong>cheie – valoare</strong>.
+                            </p>
+
+                            <p>
+                                De exemplu, cheia este <code>nume</code>, iar valoarea este
+                                <code>Carlita</code>.
+                            </p>
+
+                            <p>
+                                <strong>Exercițiu:</strong> creează un dicționar cu informații
+                                despre tine.
+                            </p>
+
+                            <pre><code class="language-python"># Program cu dicționar
+
+persoana = {
+    "nume": "Carlita",
+    "varsta": 10
+}
+
+print("Informații despre mine:")
+print(persoana)</code></pre>
+
+                            <p><strong>Ce înveți:</strong></p>
+
+                            <ul>
+                                <li>cheie și valoare;</li>
+                                <li>organizarea informațiilor;</li>
+                                <li>crearea unui dicționar.</li>
+                            </ul>
+
+                            <h3>7. Set</h3>
+
+                            <p>
+                                Un set este o colecție care nu păstrează valorile duplicate.
+                            </p>
+
+                            <p>
+                                <strong>Exercițiu:</strong> creează un set cu numere repetate.
+                            </p>
+
+                            <pre><code class="language-python"># Program cu set
+
+numere = {1, 2, 3, 3, 3}
+
+print("Numele meu este Carlita")
+print("Numerele fără dubluri sunt:")
+print(numere)</code></pre>
+
+                            <p>
+                                Chiar dacă numărul <code>3</code> este scris de mai multe ori,
+                                Python îl păstrează o singură dată.
+                            </p>
+
+                            <p><strong>Ce înveți:</strong></p>
+
+                            <ul>
+                                <li>eliminarea valorilor duplicate;</li>
+                                <li>crearea și folosirea seturilor.</li>
+                            </ul>
+
+                            <p>
+                                Python are și tipul de date <code>bytes</code>, dar pentru început
+                                nu trebuie să intrăm în detalii despre el.
+                            </p>
+
+                            <h3>Regulă importantă pentru variabile</h3>
+
+                            <ul>
+                                <li>Nu folosi spații în numele variabilelor.</li>
+                                <li>Folosește caracterul underscore: <code>_</code>.</li>
+                            </ul>
+
+                            <p>Exemplu corect:</p>
+
+                            <pre><code class="language-python">numele_meu = "Carlita"</code></pre>
+
+                            <p>Exemplu greșit:</p>
+
+                            <pre><code class="language-python">numele meu = "Carlita"</code></pre>
+
+                            <h3>Cum lucrezi cu tipurile de date?</h3>
+
+                            <p>
+                                Tipurile de date pot fi modificate sau verificate folosind trei
+                                lucruri:
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <strong>Operatori</strong>:
+                                    <code>+</code>, <code>-</code>, <code>/</code>,
+                                    <code>==</code>, <code>&gt;</code>;
+                                </li>
+
+                                <li>
+                                    <strong>Funcții built-in</strong>:
+                                    <code>len()</code> verifică lungimea, iar
+                                    <code>type()</code> verifică tipul de date;
+                                </li>
+
+                                <li>
+                                    <strong>Metode</strong>:
+                                    de exemplu, <code>.append()</code> adaugă un element într-o
+                                    listă.
+                                </li>
+                            </ul>
+
+                            <p>Exemplu:</p>
+
+                            <pre><code class="language-python">numbers = [1, 2, 3]
+
+numbers.append(4)
+
+print(numbers)
+print(len(numbers))
+print(type(numbers))</code></pre>
+
+                            <h3>Încheiere</h3>
+
+                            <p>
+                                Asta a fost lecția despre keywords și tipurile de date din Python.
+                                Dacă înțelegi aceste două lucruri, deja poți începe să scrii programe
+                                mici.
+                            </p>
+
+                            <p>
+                                În lecția următoare învățăm <strong>condiții</strong>,
+                                <strong>bucle</strong> și <strong>funcții</strong> – exact ce îți
+                                trebuie ca să începi să construiești logică reală.
+                            </p>
+                        </details>
+
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=GFQrxNdLkU4&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=7"
+                                target="_blank" rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+
+                    <!-- DIALOGUL LECȚIEI 5 -->
+                    <dialog id="lectia-python-5">
+                        <iframe src="https://www.youtube.com/embed/IlX6l9AeIaI?si=iQ-ZpZ1k4R3q7jID "
+                            title="Python Lecția 5 – NUMERE + BOOLEAN" allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Tipurile de date: Numerele si Boolean</h3>
+                        <p>Deci am văzut rapid tipurile de date.
+                            Acum facem zoom pe cele mai importante două:
+                            • Numerele (ca să calculezi)
+                            • Boolean (ca să iei decizii)
+                        </p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+
+                            <h3>Introducere</h3>
+
+                            <p>
+                                În lecția trecută am văzut pe scurt tipurile de date din Python.
+                                Acum vom face zoom pe două dintre cele mai importante:
+                            </p>
+
+                            <ul>
+                                <li><strong>Numerele</strong> – pentru calcule.</li>
+                                <li><strong>Boolean</strong> – pentru a lua decizii.</li>
+                            </ul>
+
+                            <p>
+                                Vom învăța totul folosind exemple simple, pe care le poate înțelege
+                                oricine.
+                            </p>
+
+                            <h3>1. Tipurile de numere în Python</h3>
+
+                            <h4>int – numere întregi</h4>
+
+                            <p>
+                                Tipul <code>int</code> reprezintă numere întregi, fără zecimale.
+                            </p>
+
+                            <pre><code class="language-python">varsta = 20
+pasi = 8432
+temperatura = -5</code></pre>
+
+                            <p>Se folosesc pentru:</p>
+
+                            <ul>
+                                <li>vârstă;</li>
+                                <li>număr de obiecte;</li>
+                                <li>scoruri;</li>
+                                <li>pași;</li>
+                                <li>cantități.</li>
+                            </ul>
+
+                            <h4>float – numere cu zecimale</h4>
+
+                            <p>
+                                Tipul <code>float</code> reprezintă numerele cu zecimale.
+                            </p>
+
+                            <pre><code class="language-python">pret = 19.99
+inaltime = 1.72
+timp = 2.5</code></pre>
+
+                            <p>Se folosesc pentru:</p>
+
+                            <ul>
+                                <li>prețuri;</li>
+                                <li>greutate;</li>
+                                <li>timp;</li>
+                                <li>măsurători.</li>
+                            </ul>
+
+                            <h4>Important</h4>
+
+                            <p>
+                                Uneori vei observa că rezultatele cu zecimale nu sunt perfecte.
+                                De exemplu:
+                            </p>
+
+                            <pre><code class="language-python">print(0.1 + 0.2)</code></pre>
+
+                            <p>
+                                Rezultatul nu este exact <code>0.3</code>. Acest lucru este normal și
+                                apare din modul în care calculatorul stochează numerele cu zecimale.
+                            </p>
+
+                            <h4>complex – numere complexe</h4>
+
+                            <p>
+                                Python știe să lucreze și cu numere complexe.
+                            </p>
+
+                            <pre><code class="language-python">z = 2 + 3j</code></pre>
+
+                            <p>Acestea au două părți:</p>
+
+                            <ul>
+                                <li>partea reală: <code>2</code>;</li>
+                                <li>partea imaginară: <code>3j</code>.</li>
+                            </ul>
+
+                            <p>Sunt folosite mai ales în:</p>
+
+                            <ul>
+                                <li>matematică;</li>
+                                <li>fizică;</li>
+                                <li>inginerie.</li>
+                            </ul>
+
+                            <p>
+                                Pentru început nu trebuie să le folosești, dar este bine să știi că
+                                există.
+                            </p>
+
+                            <h3>2. Operații matematice</h3>
+
+                            <p>
+                                Acum vine partea interesantă. Python poate face toate operațiile
+                                matematice de bază.
+                            </p>
+
+                            <pre><code class="language-python">x = 10
+y = 3
+
+print(x + y)   # 13
+print(x - y)   # 7
+print(x * y)   # 30
+print(x / y)   # 3.333...</code></pre>
+
+                            <p>
+                                Operatorul <code>/</code> face împărțirea normală și poate întoarce
+                                un rezultat cu zecimale.
+                            </p>
+
+                            <h4>Împărțire fără zecimale</h4>
+
+                            <pre><code class="language-python">print(x // y)   # 3</code></pre>
+
+                            <p>
+                                Operatorul <code>//</code> păstrează doar partea întreagă a
+                                rezultatului.
+                            </p>
+
+                            <h4>Restul împărțirii</h4>
+
+                            <pre><code class="language-python">print(x % y)   # 1</code></pre>
+
+                            <p>
+                                Operatorul <code>%</code> întoarce restul împărțirii.
+                            </p>
+
+                            <p>Este foarte util pentru:</p>
+
+                            <ul>
+                                <li>verificarea numerelor pare și impare;</li>
+                                <li>jocuri;</li>
+                                <li>rotații;</li>
+                                <li>diverse calcule.</li>
+                            </ul>
+
+                            <h4>Ridicarea la putere</h4>
+
+                            <pre><code class="language-python">print(x ** y)   # 1000</code></pre>
+
+                            <p>
+                                Operatorul <code>**</code> înseamnă ridicare la putere.
+                            </p>
+
+                            <h3>3. Conversii între tipuri de date</h3>
+
+                            <p>
+                                În viața reală, foarte multe date vin sub formă de text.
+                                De exemplu, atunci când utilizatorul completează un formular.
+                            </p>
+
+                            <pre><code class="language-python">age_text = "20"
+age = int(age_text)
+
+price = "15.50"
+money = float(price)</code></pre>
+
+                            <p>
+                                Funcția <code>int()</code> transformă un text într-un număr întreg,
+                                iar funcția <code>float()</code> îl transformă într-un număr cu
+                                zecimale.
+                            </p>
+
+                            <p>
+                                Dacă nu faci această conversie, Python va considera că valoarea este
+                                text și va genera erori atunci când încerci să faci calcule.
+                            </p>
+                            <h3>4. Boolean (True / False)</h3>
+
+                            <p>
+                                Tipul de date <strong>Boolean</strong> poate avea doar două valori:
+                            </p>
+
+                            <ul>
+                                <li><code>True</code> – înseamnă adevărat.</li>
+                                <li><code>False</code> – înseamnă fals.</li>
+                            </ul>
+
+                            <p>
+                                Acest tip de date este folosit atunci când răspunsul poate fi doar
+                                <strong>Da</strong> sau <strong>Nu</strong>.
+                            </p>
+
+                            <pre><code class="language-python">ploua = True
+am_baterie = False</code></pre>
+
+                            <p>
+                                Variabila <code>ploua</code> spune că afară plouă, iar
+                                <code>am_baterie</code> spune că dispozitivul nu mai are baterie.
+                            </p>
+
+                            <h3>5. Boolean apare din comparații</h3>
+
+                            <p>
+                                De cele mai multe ori, valorile Boolean apar atunci când comparăm două
+                                valori.
+                            </p>
+
+                            <pre><code class="language-python">age = 17
+
+print(age >= 18)</code></pre>
+
+                            <p>
+                                Python verifică dacă valoarea lui <code>age</code> este mai mare sau
+                                egală cu <code>18</code>.
+                            </p>
+
+                            <p>
+                                În acest caz, rezultatul va fi <code>False</code>, deoarece 17 este mai
+                                mic decât 18.
+                            </p>
+
+                            <p>
+                                Acesta este fundamentul instrucțiunii <code>if</code>, pe care o vom
+                                învăța în lecțiile următoare.
+                            </p>
+
+                            <h3>6. Operatorii de comparație</h3>
+
+                            <p>
+                                Python folosește mai mulți operatori pentru a compara valori.
+                            </p>
+
+                            <ul>
+                                <li><code>==</code> – egal cu;</li>
+                                <li><code>!=</code> – diferit de;</li>
+                                <li><code>&gt;</code> – mai mare decât;</li>
+                                <li><code>&lt;</code> – mai mic decât;</li>
+                                <li><code>&gt;=</code> – mai mare sau egal;</li>
+                                <li><code>&lt;=</code> – mai mic sau egal.</li>
+                            </ul>
+
+                            <p>
+                                Toți acești operatori întorc întotdeauna una dintre cele două valori:
+                                <code>True</code> sau <code>False</code>.
+                            </p>
+
+                            <h3>7. Exemplu practic</h3>
+
+                            <p>
+                                Să verificăm dacă o persoană este adult.
+                            </p>
+
+                            <pre><code class="language-python">age = 16
+
+is_adult = age >= 18
+
+print("Este adult?")
+print(is_adult)</code></pre>
+
+                            <p>
+                                Variabila <code>is_adult</code> va conține rezultatul comparației.
+                            </p>
+
+                            <p>
+                                Deoarece vârsta este 16 ani, programul va afișa
+                                <code>False</code>.
+                            </p>
+
+                            <h3>Mini proiect – Avem bani suficienți?</h3>
+
+                            <p>
+                                Hai să realizăm un program simplu care verifică dacă avem suficienți
+                                bani pentru a cumpăra un produs.
+                            </p>
+
+                            <pre><code class="language-python">bani = 25.0
+pret = 19.99
+
+pot_cumpara = bani >= pret
+
+print("Am bani suficienți?")
+print(pot_cumpara)</code></pre>
+
+                            <p>
+                                Programul compară suma pe care o ai cu prețul produsului.
+                            </p>
+
+                            <p>
+                                Dacă ai suficienți bani, rezultatul va fi
+                                <code>True</code>. În caz contrar, va fi
+                                <code>False</code>.
+                            </p>
+
+                            <p>
+                                Observă că programul nu doar calculează, ci ia și o decizie pe baza
+                                comparației dintre cele două valori.
+                            </p>
+
+                            <h3>Rezumat</h3>
+
+                            <p>
+                                În această lecție ai învățat:
+                            </p>
+
+                            <ul>
+                                <li>tipurile de numere: <code>int</code>, <code>float</code> și <code>complex</code>;
+                                </li>
+                                <li>operațiile matematice de bază;</li>
+                                <li>cum transformi textul în numere folosind <code>int()</code> și <code>float()</code>;
+                                </li>
+                                <li>ce este tipul de date <code>Boolean</code>;</li>
+                                <li>cum funcționează comparațiile în Python;</li>
+                                <li>operatorii de comparație;</li>
+                                <li>cum poți lua decizii simple într-un program.</li>
+                            </ul>
+
+                            <h3>Încheiere</h3>
+
+                            <p>
+                                Asta a fost lecția despre <strong>Numere</strong> și
+                                <strong>Boolean</strong>.
+                            </p>
+
+                            <p>
+                                Numerele te ajută să faci calcule, iar Boolean te ajută să iei decizii.
+                                Aceste două tipuri de date sunt folosite în aproape orice program
+                                Python.
+                            </p>
+
+                            <p>
+                                În lecția următoare vom învăța despre
+                                <strong>Strings</strong>, adică modul în care Python lucrează cu
+                                textul.
+                            </p>
+
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=IlX6l9AeIaI&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=5"
+                                target="_blank" rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+                    <!-- DIALOGUL LECȚIEI 6 -->
+                    <dialog id="lectia-python-6">
+                        <iframe src="https://www.youtube.com/embed/R1HpBygn8Ag?si=Lmu5yic9BKY1UM1h"
+                            title="Tot ce trebuie să știi despre STRINGS " allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Tot ce trebuie să știi despre STRINGS </h3>
+                        <p>Astăzi vorbim despre strings, adică textul în Python.
+                            Dacă știi să lucrezi cu text, deja poți crea programe reale, mesaje, meniuri și afișări.</p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <h3>Introducere</h3>
+
+                            <p>
+                                Astăzi vom învăța despre <strong>Strings</strong>, adică modul în care
+                                Python lucrează cu textul.
+                            </p>
+
+                            <p>
+                                Dacă știi să lucrezi cu text, deja poți crea programe reale:
+                                mesaje, meniuri, afișări și multe altele.
+                            </p>
+
+                            <h3>1. Ce este un String?</h3>
+
+                            <p>
+                                Un <strong>String</strong> este o bucată de text. Poate fi un singur
+                                cuvânt, o propoziție sau chiar un paragraf întreg.
+                            </p>
+
+                            <p>
+                                În Python, un string poate fi scris folosind:
+                            </p>
+
+                            <ul>
+                                <li>ghilimele simple <code>' '</code>;</li>
+                                <li>ghilimele duble <code>" "</code>;</li>
+                                <li>ghilimele triple <code>''' '''</code> sau <code>""" """</code>.</li>
+                            </ul>
+
+                            <p>Exemple:</p>
+
+                            <pre><code class="language-python"># String
+
+# Ghilimele simple
+print('Hello There')
+
+# Ghilimele duble
+print("Welcome to Python!")
+
+# Ghilimele triple
+print("""Thanks for joining us!""")</code></pre>
+
+                            <p>
+                                Python acceptă toate aceste variante, iar tu o poți folosi pe cea
+                                care face codul mai ușor de citit.
+                            </p>
+
+                            <h3>2. Escape Characters</h3>
+
+                            <p>
+                                Uneori ai nevoie să scrii caractere speciale într-un string.
+                                Pentru asta folosim <strong>escape characters</strong>, adică
+                                caracterul <code>\</code> urmat de o literă sau un simbol.
+                            </p>
+
+                            <p>
+                                De exemplu, dacă vrei să scrii un apostrof într-un text delimitat
+                                de ghilimele simple:
+                            </p>
+
+                            <pre><code class="language-python">print('can\'t')</code></pre>
+
+                            <p>
+                                Sau poți folosi ghilimele duble și nu mai ai nevoie de caracterul
+                                escape:
+                            </p>
+
+                            <pre><code class="language-python">print("can't")</code></pre>
+
+                            <p>Cele mai folosite escape characters sunt:</p>
+
+                            <ul>
+                                <li><code>\'</code> – apostrof;</li>
+                                <li><code>\"</code> – ghilimele duble;</li>
+                                <li><code>\n</code> – linie nouă;</li>
+                                <li><code>\t</code> – tab;</li>
+                                <li><code>\\</code> – backslash;</li>
+                                <li><code>\r</code> – carriage return;</li>
+                                <li><code>\b</code> – backspace;</li>
+                                <li><code>\f</code> – form feed.</li>
+                            </ul>
+
+                            <p>Exemplu:</p>
+
+                            <pre><code class="language-python">print("Salut\nBine ai venit!")
+
+print("Nume:\tCarlita")</code></pre>
+
+                            <h3>3. Concatenarea Stringurilor</h3>
+
+                            <p>
+                                Concatenarea înseamnă unirea mai multor texte într-un singur text.
+                            </p>
+
+                            <p>
+                                Cel mai simplu mod este folosind operatorul <code>+</code>.
+                            </p>
+
+                            <pre><code class="language-python">print("Hello" + "World")
+
+print("Hello" + " " + "World")
+
+print("Happy" + " " + "Pythoning!")</code></pre>
+
+                            <p>
+                                Observă că spațiile trebuie adăugate manual atunci când este nevoie.
+                            </p>
+
+                            <h3>Metoda join()</h3>
+
+                            <p>
+                                Dacă ai mai multe bucăți de text, metoda
+                                <code>join()</code> este mai eficientă și mai ușor de citit.
+                            </p>
+
+                            <pre><code class="language-python">print(" ".join(["Happy", "Pythoning!"]))</code></pre>
+
+                            <p>
+                                Rezultatul va fi:
+                            </p>
+
+                            <pre><code>Happy Pythoning!</code></pre>
+
+                            <p>
+                                Metoda <code>join()</code> este recomandată atunci când unești mai
+                                multe stringuri într-un singur text.
+                            </p>
+                            <h3>4. Lungimea unui String - len()</h3>
+
+                            <p>
+                                Dacă vrei să afli câte caractere are un text, folosești funcția
+                                <code>len()</code>.
+                            </p>
+
+                            <pre><code class="language-python">text = "Happy Pythoning!"
+
+print(len(text))</code></pre>
+
+                            <p>
+                                Funcția <code>len()</code> numără toate caracterele din string,
+                                inclusiv spațiile.
+                            </p>
+
+                            <h3>5. Metode utile pentru Stringuri</h3>
+
+                            <p>
+                                Stringurile au foarte multe metode deja construite în Python.
+                                Acestea te ajută să modifici sau să afișezi textul în diferite moduri.
+                            </p>
+
+                            <h4>upper()</h4>
+
+                            <p>
+                                Transformă toate literele în majuscule.
+                            </p>
+
+                            <pre><code class="language-python">print("hello".upper())</code></pre>
+
+                            <p>Rezultat:</p>
+
+                            <pre><code>HELLO</code></pre>
+
+                            <h4>lower()</h4>
+
+                            <p>
+                                Transformă toate literele în litere mici.
+                            </p>
+
+                            <pre><code class="language-python">print("HELLO".lower())</code></pre>
+
+                            <p>Rezultat:</p>
+
+                            <pre><code>hello</code></pre>
+
+                            <h3>6. Formatarea textului</h3>
+
+                            <p>
+                                De multe ori vrem să introducem valori într-un text.
+                                Python oferă mai multe metode pentru acest lucru.
+                            </p>
+
+                            <h4>Metoda format()</h4>
+
+                            <pre><code class="language-python">name = "Carlita"
+age = 35
+
+print("My name is {0} and I'm {1}".format(name, age))</code></pre>
+
+                            <p>
+                                Valorile din variabile sunt introduse automat în pozițiile indicate
+                                de acolade.
+                            </p>
+
+                            <h4>f-strings</h4>
+
+                            <p>
+                                În prezent, cea mai simplă și cea mai folosită metodă este
+                                <strong>f-string</strong>.
+                            </p>
+
+                            <pre><code class="language-python">name = "Carlita"
+age = 35
+
+print(f"My name is {name} and I'm {age}")</code></pre>
+
+                            <p>
+                                Litera <code>f</code> din fața șirului permite folosirea directă
+                                a variabilelor între acolade.
+                            </p>
+
+                            <p>
+                                În proiectele moderne Python, f-strings sunt metoda recomandată.
+                            </p>
+
+                            <h3>7. Indexarea Stringurilor</h3>
+
+                            <p>
+                                Fiecare caracter dintr-un string are o poziție numită
+                                <strong>index</strong>.
+                            </p>
+
+                            <p>
+                                Indexarea începe întotdeauna de la <strong>0</strong>.
+                            </p>
+
+                            <pre><code class="language-python">welcome = "Welcome to Python!"
+
+print(welcome[0])      # W
+print(welcome[11])     # P
+print(welcome[-1])     # !</code></pre>
+
+                            <p>
+                                Poți folosi și indici negativi.
+                            </p>
+
+                            <ul>
+                                <li><code>-1</code> reprezintă ultimul caracter;</li>
+                                <li><code>-2</code> reprezintă penultimul caracter;</li>
+                                <li>și așa mai departe.</li>
+                            </ul>
+
+                            <h4>Citirea inversă</h4>
+
+                            <pre><code class="language-python">print(welcome[::-1])</code></pre>
+
+                            <p>
+                                Folosind <code>step = -1</code>, Python afișează textul în ordine
+                                inversă.
+                            </p>
+
+                            <h3>8. Slicing</h3>
+
+                            <p>
+                                Slicing înseamnă extragerea unei bucăți dintr-un string.
+                            </p>
+
+                            <pre><code class="language-python">welcome = "Welcome to Python!"
+
+print(welcome[0:7])      # Welcome
+print(welcome[11:17])    # Python</code></pre>
+
+                            <p>
+                                Structura generală este:
+                            </p>
+
+                            <pre><code class="language-python">string[start:end:step]</code></pre>
+
+                            <p>Un alt exemplu:</p>
+
+                            <pre><code class="language-python">welcome = "Welcome to Python!"
+
+print(welcome[0:7:2])</code></pre>
+
+                            <p>Unde:</p>
+
+                            <ul>
+                                <li><strong>start</strong> – poziția de unde începe;</li>
+                                <li><strong>end</strong> – poziția unde se oprește (fără a o include);</li>
+                                <li><strong>step</strong> – din câte în câte caractere merge.</li>
+                            </ul>
+
+                            <h3>Rezumat</h3>
+
+                            <p>
+                                În această lecție ai învățat:
+                            </p>
+
+                            <ul>
+                                <li>ce este un String;</li>
+                                <li>cum se folosesc ghilimelele simple, duble și triple;</li>
+                                <li>ce sunt escape characters;</li>
+                                <li>cum unești texte folosind <code>+</code> și <code>join()</code>;</li>
+                                <li>cum afli lungimea unui text folosind <code>len()</code>;</li>
+                                <li>cum folosești metodele <code>upper()</code> și <code>lower()</code>;</li>
+                                <li>cum formatezi textul folosind <code>format()</code> și <code>f-strings</code>;</li>
+                                <li>cum funcționează indexarea;</li>
+                                <li>cum extragi bucăți de text folosind slicing.</li>
+                            </ul>
+
+                            <h3>Încheiere</h3>
+
+                            <p>
+                                Acum știi cele mai importante lucruri despre stringuri în Python.
+                            </p>
+
+                            <p>
+                                Ai învățat cum să creezi texte, cum să le modifici, cum să le
+                                formatezi și cum să extragi exact informația de care ai nevoie.
+                            </p>
+
+                            <p>
+                                În lecția următoare vom învăța despre
+                                <strong>liste, tuple și dicționare</strong>, unele dintre cele mai
+                                folosite structuri de date din Python.
+                            </p>
+
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=R1HpBygn8Ag&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=4"
+                                target="_blank" rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+
+                    <!-- DIALOGUL LECȚIEI 7-->
+                    <dialog id="lectia-python-7">
+                        <iframe src="https://www.youtube.com/embed/kw_FZmXGeds?si=92TElSGoTxs4n_2z"
+                            title="Ce sunt Bytes și Bytearray " allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Ce sunt Bytes și Bytearray </h3>
+                        <p></p>
+                        <p class="lectie-durata">Durată: 03:07</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <h3>Introducere</h3>
+
+                            <p>
+                                Astăzi vom vorbi despre două tipuri de date pe care mulți începători
+                                le evită: <strong>bytes</strong> și <strong>bytearray</strong>.
+                            </p>
+
+                            <p>
+                                Acestea sunt foarte importante atunci când lucrezi cu fișiere,
+                                rețele, imagini sau alte date binare.
+                            </p>
+
+                            <p>
+                                Chiar dacă nu le vei folosi imediat, este bine să înțelegi ce sunt
+                                și când sunt utile.
+                            </p>
+
+                            <h3>1. Ce sunt Bytes?</h3>
+
+                            <p>
+                                Un obiect <code>bytes</code> reprezintă o secvență de valori brute,
+                                fiecare având o valoare între <strong>0</strong> și
+                                <strong>255</strong>.
+                            </p>
+
+                            <p>
+                                Gândește-te la el ca la un șir de numere mici care reprezintă
+                                informații în format binar.
+                            </p>
+
+                            <p>
+                                Diferența principală dintre <strong>String</strong> și
+                                <strong>Bytes</strong> este:
+                            </p>
+
+                            <ul>
+                                <li><strong>String</strong> conține text Unicode.</li>
+                                <li><strong>Bytes</strong> conține text encodat sau date binare.</li>
+                            </ul>
+
+                            <p>Exemplu:</p>
+
+                            <pre><code class="language-python">print("=== 1. Ce sunt bytes? ===")
+
+text = "Hello"
+data = b"Hello"
+
+print("String:", text)
+print("Bytes:", data)
+
+print("Tip string:", type(text))
+print("Tip bytes:", type(data))</code></pre>
+
+                            <p>
+                                Observă că litera <code>b</code> din fața textului spune lui Python
+                                că este un obiect de tip <code>bytes</code>.
+                            </p>
+
+                            <h3>2. Cum creezi un obiect Bytes?</h3>
+
+                            <p>
+                                Există mai multe moduri prin care poți crea un obiect
+                                <code>bytes</code>.
+                            </p>
+
+                            <h4>Metoda 1 - Literal</h4>
+
+                            <pre><code class="language-python">data1 = b"Hello"
+
+print(data1)</code></pre>
+
+                            <p>
+                                Este cea mai simplă metodă și funcționează pentru textul ASCII.
+                            </p>
+
+                            <h4>Metoda 2 - Dintr-o listă de numere</h4>
+
+                            <pre><code class="language-python">data2 = bytes([72, 101, 108, 108, 111])
+
+print(data2)</code></pre>
+
+                            <p>
+                                Fiecare număr reprezintă codul unui caracter.
+                            </p>
+
+                            <h4>Metoda 3 - Prin encodare</h4>
+
+                            <pre><code class="language-python">data3 = "café".encode("utf-8")
+
+print(data3)</code></pre>
+
+                            <p>
+                                Metoda <code>encode()</code> transformă un String într-un obiect
+                                de tip <code>bytes</code>.
+                            </p>
+
+                            <p>
+                                UTF-8 este una dintre cele mai folosite metode de codificare a
+                                textului.
+                            </p>
+
+                            <h3>3. Cum transformi Bytes înapoi în text?</h3>
+
+                            <p>
+                                Dacă ai un obiect <code>bytes</code> și vrei să îl transformi din
+                                nou într-un String, folosești metoda
+                                <code>decode()</code>.
+                            </p>
+
+                            <pre><code class="language-python">data = b"caf\xc3\xa9"
+
+text_decoded = data.decode("utf-8")
+
+print("Bytes:", data)
+print("Text decodat:", text_decoded)</code></pre>
+
+                            <p>
+                                Metoda <code>decode()</code> citește informația binară și o
+                                transformă într-un text pe care îl putem afișa și folosi în
+                                programele noastre.
+                            </p>
+                            <h3>4. Indexarea și Slicing pentru Bytes</h3>
+
+                            <p>
+                                Obiectele <code>bytes</code> se comportă asemănător cu
+                                stringurile. Putem accesa fiecare element folosind indexarea.
+                            </p>
+
+                            <pre><code class="language-python">data = b"Hello"
+
+print(data[0])
+print(data[1])
+print(data[-1])</code></pre>
+
+                            <p>
+                                Există însă o diferență importantă.
+                            </p>
+
+                            <p>
+                                În cazul stringurilor, Python întoarce un caracter.
+                                În cazul obiectelor <code>bytes</code>, Python întoarce valoarea
+                                numerică a acelui byte.
+                            </p>
+
+                            <p>De exemplu:</p>
+
+                            <pre><code class="language-python">print(data[0])</code></pre>
+
+                            <p>
+                                Rezultatul va fi <code>72</code>, deoarece acesta este codul ASCII
+                                pentru litera <strong>H</strong>.
+                            </p>
+
+                            <h4>Slicing</h4>
+
+                            <p>
+                                La fel ca în cazul stringurilor, putem extrage doar o parte din
+                                obiectul <code>bytes</code>.
+                            </p>
+
+                            <pre><code class="language-python">data = b"Hello"
+
+print(data[1:4])</code></pre>
+
+                            <p>
+                                Rezultatul este un nou obiect de tip <code>bytes</code>, nu un
+                                String.
+                            </p>
+
+                            <h3>5. Bytearray</h3>
+
+                            <p>
+                                Obiectele <code>bytes</code> sunt <strong>immutable</strong>,
+                                ceea ce înseamnă că nu pot fi modificate după ce au fost create.
+                            </p>
+
+                            <p>
+                                Dacă ai nevoie de o versiune modificabilă, Python oferă tipul de
+                                date <code>bytearray</code>.
+                            </p>
+
+                            <pre><code class="language-python">buffer = bytearray(b"ABC")
+
+print("Înainte:", buffer)
+
+buffer[0] = 97
+
+print("După modificare:", buffer)</code></pre>
+
+                            <p>
+                                În acest exemplu, primul caracter este modificat direct în
+                                memorie.
+                            </p>
+
+                            <p>
+                                Valoarea <code>97</code> reprezintă codul ASCII pentru litera
+                                <strong>a</strong>.
+                            </p>
+
+                            <h4>Transformarea unui Bytearray în Bytes</h4>
+
+                            <pre><code class="language-python">buffer = bytearray(b"ABC")
+
+print(bytes(buffer))</code></pre>
+
+                            <p>
+                                Funcția <code>bytes()</code> transformă un obiect
+                                <code>bytearray</code> într-un obiect <code>bytes</code>.
+                            </p>
+
+                            <h3>6. Conversii Hex</h3>
+
+                            <p>
+                                Obiectele <code>bytes</code> pot fi transformate într-un șir de
+                                caractere hexazecimale folosind metoda <code>hex()</code>.
+                            </p>
+
+                            <pre><code class="language-python">hex_value = b"Hello".hex()
+
+print(hex_value)</code></pre>
+
+                            <p>
+                                Rezultatul va fi:
+                            </p>
+
+                            <pre><code>48656c6c6f</code></pre>
+
+                            <p>
+                                Putem face și operația inversă folosind metoda
+                                <code>fromhex()</code>.
+                            </p>
+
+                            <pre><code class="language-python">back_to_bytes = bytes.fromhex("48656c6c6f")
+
+print(back_to_bytes)</code></pre>
+
+                            <p>
+                                Aceste metode sunt foarte utile atunci când lucrăm cu fișiere
+                                binare, protocoale de rețea sau aplicații de securitate.
+                            </p>
+
+                            <h3>Rezumat</h3>
+
+                            <p>
+                                În această lecție ai învățat:
+                            </p>
+
+                            <ul>
+                                <li>ce sunt obiectele <code>bytes</code>;</li>
+                                <li>diferența dintre <code>String</code> și <code>bytes</code>;</li>
+                                <li>cum creezi obiecte <code>bytes</code>;</li>
+                                <li>cum folosești metodele <code>encode()</code> și <code>decode()</code>;</li>
+                                <li>cum funcționează indexarea și slicing pentru <code>bytes</code>;</li>
+                                <li>ce este <code>bytearray</code> și cum poate fi modificat;</li>
+                                <li>cum transformi datele folosind <code>hex()</code> și <code>fromhex()</code>.
+                                </li>
+                            </ul>
+
+                            <h3>Încheiere</h3>
+
+                            <p>
+                                Acum știi ce sunt <strong>bytes</strong> și
+                                <strong>bytearray</strong>, cum le creezi, cum le modifici și cum
+                                le convertești.
+                            </p>
+
+                            <p>
+                                Chiar dacă nu le vei folosi în fiecare program, ele sunt foarte
+                                importante atunci când lucrezi cu fișiere, comunicații în rețea sau
+                                date binare.
+                            </p>
+
+                            <p>
+                                În lecția următoare vom învăța despre
+                                <strong>Liste, Tuple, Seturi și Dicționare</strong>, unele dintre
+                                cele mai utilizate structuri de date din Python.
+                            </p>
+                            >
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=kw_FZmXGeds&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=3"
+                                target="_blank" rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+
+                    <!-- DIALOGUL LECȚIEI 8-->
+                    <dialog id="lectia-python-8">
+                        <iframe src="https://www.youtube.com/embed/Xndb9C83Twg?si=s4OPxU0wchA6bxof"
+                            title="Dicționare și Seturi in Python" allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Dicționare și Seturi in Pythonn</h3>
+                        <p></p>
+                        <p class="lectie-durata">Durată: 03:32</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <h3>Introducere</h3>
+
+                            <p>
+                                Astăzi vom învăța două structuri de date foarte importante în Python:
+                                <strong>dicționarele</strong> și <strong>seturile</strong>.
+                            </p>
+
+                            <p>
+                                Cu ajutorul lor poți organiza informații asemănător unei baze de date,
+                                unei liste de contacte sau unui catalog de produse.
+                            </p>
+
+                            <h3>1. Ce este un Dicționar?</h3>
+
+                            <p>
+                                Un dicționar este o colecție de perechi
+                                <strong>cheie – valoare</strong>.
+                            </p>
+
+                            <p>
+                                Gândește-te la el ca la un tabel cu două coloane:
+                                într-o coloană avem cheia, iar în cealaltă avem valoarea asociată.
+                            </p>
+
+                            <p>Exemplu:</p>
+
+                            <pre><code class="language-python">print("=== Dicționarul meu de mașini ===")
+
+masini = {
+    "VW": "Polo",
+    "BMW": "M5",
+    "Kia": "Sportage"
+}
+
+print(masini)</code></pre>
+
+                            <p>
+                                În acest dicționar:
+                            </p>
+
+                            <ul>
+                                <li><code>"VW"</code> este cheia, iar <code>"Polo"</code> este valoarea;</li>
+                                <li><code>"BMW"</code> este cheia, iar <code>"M5"</code> este valoarea;</li>
+                                <li><code>"Kia"</code> este cheia, iar <code>"Sportage"</code> este valoarea.</li>
+                            </ul>
+
+                            <h3>2. Crearea unui Dicționar cu acolade</h3>
+
+                            <p>
+                                Cel mai simplu mod de a crea un dicționar este folosind acoladele
+                                <code>{ }</code>.
+                            </p>
+
+                            <pre><code class="language-python">print("=== Crearea unui dicționar cu acolade ===")
+
+john = {
+    "name": "John Doe",
+    "age": 25,
+    "job": "Python Developer"
+}
+
+print(john)</code></pre>
+
+                            <p>
+                                Cheile și valorile sunt separate prin două puncte
+                                <code>:</code>, iar fiecare pereche este separată prin virgulă.
+                            </p>
+
+                            <h3>3. Accesarea unei valori</h3>
+
+                            <p>
+                                Pentru a lua o valoare dintr-un dicționar, folosim cheia dintre
+                                paranteze pătrate.
+                            </p>
+
+                            <pre><code class="language-python">print("Meseria lui John este:")
+print(john["job"])</code></pre>
+
+                            <p>
+                                Python caută cheia <code>"job"</code> și întoarce valoarea asociată:
+                                <code>"Python Developer"</code>.
+                            </p>
+
+                            <p>Putem accesa și celelalte valori:</p>
+
+                            <pre><code class="language-python">print("Nume:", john["name"])
+print("Vârstă:", john["age"])</code></pre>
+
+                            <p>
+                                Este asemănător cu indexarea unei liste, dar în loc să folosim un
+                                număr, folosim o cheie.
+                            </p>
+
+                            <h3>4. Crearea unui Dicționar cu dict()</h3>
+
+                            <p>
+                                Un dicționar poate fi creat și folosind constructorul
+                                <code>dict()</code>.
+                            </p>
+
+                            <pre><code class="language-python">print("=== Crearea unui dicționar cu dict() ===")
+
+jane = dict(
+    name="Jane Doe",
+    age=24,
+    job="Web Developer"
+)
+
+print(jane)</code></pre>
+
+                            <p>
+                                În acest caz, cheile sunt scrise fără ghilimele în interiorul
+                                funcției <code>dict()</code>.
+                            </p>
+
+                            <p>Putem accesa vârsta lui Jane astfel:</p>
+
+                            <pre><code class="language-python">print("Vârsta lui Jane este:")
+print(jane["age"])</code></pre>
+
+                            <h3>5. Ordinea elementelor</h3>
+
+                            <p>
+                                În versiunile moderne de Python, dicționarele păstrează ordinea în
+                                care elementele au fost introduse.
+                            </p>
+
+                            <p>
+                                Acest comportament este garantat începând cu Python 3.7.
+                            </p>
+
+                            <h3>6. Metoda get()</h3>
+
+                            <p>
+                                O metodă mai sigură pentru accesarea valorilor este
+                                <code>get()</code>.
+                            </p>
+
+                            <pre><code class="language-python">print(john.get("job"))</code></pre>
+
+                            <p>
+                                Diferența este că, dacă cheia nu există, metoda
+                                <code>get()</code> nu oprește programul cu o eroare.
+                            </p>
+
+                            <pre><code class="language-python">print(john.get("city"))</code></pre>
+
+                            <p>
+                                În acest caz, Python va afișa <code>None</code>.
+                            </p>
+
+                            <p>
+                                Putem oferi și o valoare implicită:
+                            </p>
+
+                            <pre><code class="language-python">print(john.get("city", "Oraș necunoscut"))</code></pre>
+
+                            <h3>7. Chei, valori și perechi</h3>
+
+                            <p>
+                                Python oferă metode speciale pentru a vedea separat cheile,
+                                valorile sau toate perechile dintr-un dicționar.
+                            </p>
+
+                            <h4>keys()</h4>
+
+                            <p>
+                                Metoda <code>keys()</code> întoarce toate cheile.
+                            </p>
+
+                            <pre><code class="language-python">print(john.keys())</code></pre>
+
+                            <p>Rezultat asemănător:</p>
+
+                            <pre><code>dict_keys(['name', 'age', 'job'])</code></pre>
+
+                            <h4>values()</h4>
+
+                            <p>
+                                Metoda <code>values()</code> întoarce toate valorile.
+                            </p>
+
+                            <pre><code class="language-python">print(john.values())</code></pre>
+
+                            <p>Rezultat asemănător:</p>
+
+                            <pre><code>dict_values(['John Doe', 25, 'Python Developer'])</code></pre>
+
+                            <h4>items()</h4>
+
+                            <p>
+                                Metoda <code>items()</code> întoarce toate perechile
+                                cheie – valoare.
+                            </p>
+
+                            <pre><code class="language-python">print(john.items())</code></pre>
+
+                            <p>Rezultat asemănător:</p>
+
+                            <pre><code>dict_items([
+    ('name', 'John Doe'),
+    ('age', 25),
+    ('job', 'Python Developer')
+])</code></pre>
+
+                            <p>
+                                Aceste metode sunt foarte utile atunci când lucrăm cu bucle și vrem
+                                să parcurgem informațiile dintr-un dicționar.
+                            </p>
+                            <h3>8. Ce este un Set?</h3>
+
+                            <p>
+                                Un <strong>set</strong> este o colecție de valori unice.
+                            </p>
+
+                            <p>
+                                Asta înseamnă că un set nu păstrează elementele duplicate.
+                            </p>
+
+                            <p>
+                                De asemenea, seturile nu garantează o ordine fixă a elementelor.
+                            </p>
+
+                            <pre><code class="language-python">print("=== Ce este un set? ===")
+
+nume = {
+    "John",
+    "Jane",
+    "Linda"
+}
+
+print(nume)</code></pre>
+
+                            <p>
+                                Este important să reții că acoladele goale
+                                <code>{}</code> creează un dicționar gol, nu un set gol.
+                            </p>
+
+                            <p>
+                                Pentru a crea un set gol, folosim:
+                            </p>
+
+                            <pre><code class="language-python">set_gol = set()
+
+print(set_gol)
+print(type(set_gol))</code></pre>
+
+                            <h3>9. Crearea unui Set cu set()</h3>
+
+                            <p>
+                                Putem crea un set și folosind constructorul
+                                <code>set()</code>.
+                            </p>
+
+                            <pre><code class="language-python">print("=== Crearea unui set cu set() ===")
+
+alte_nume = set([
+    "David",
+    "Mark",
+    "Marie"
+])
+
+print(alte_nume)</code></pre>
+
+                            <p>
+                                Constructorul <code>set()</code> poate transforma o listă într-un
+                                set.
+                            </p>
+
+                            <h3>10. Eliminarea valorilor duplicate</h3>
+
+                            <p>
+                                Una dintre cele mai utile caracteristici ale seturilor este
+                                eliminarea automată a valorilor duplicate.
+                            </p>
+
+                            <pre><code class="language-python">print("=== Eliminarea valorilor duplicate ===")
+
+numere = [1, 2, 2, 3, 4, 5, 3]
+
+print("Lista originală:")
+print(numere)
+
+print("După transformarea în set:")
+print(set(numere))</code></pre>
+
+                            <p>
+                                Valorile <code>2</code> și <code>3</code> apar de mai multe ori în
+                                listă, dar în set vor apărea o singură dată.
+                            </p>
+
+                            <p>
+                                Dacă vrem să obținem din nou o listă fără duplicate, putem scrie:
+                            </p>
+
+                            <pre><code class="language-python">numere_unice = list(set(numere))
+
+print(numere_unice)</code></pre>
+
+                            <h3>11. Operații pe Seturi</h3>
+
+                            <p>
+                                Seturile permit operații asemănătoare celor din matematică.
+                            </p>
+
+                            <pre><code class="language-python">primes = {2, 3, 5, 7}
+evens = {2, 4, 6, 8}</code></pre>
+
+                            <h4>Uniunea</h4>
+
+                            <p>
+                                Uniunea combină toate elementele din cele două seturi, fără
+                                duplicate.
+                            </p>
+
+                            <pre><code class="language-python">print("Uniune:")
+print(primes | evens)</code></pre>
+
+                            <p>
+                                Putem face același lucru și folosind metoda
+                                <code>union()</code>.
+                            </p>
+
+                            <pre><code class="language-python">print(primes.union(evens))</code></pre>
+
+                            <h4>Intersecția</h4>
+
+                            <p>
+                                Intersecția păstrează doar elementele care apar în ambele seturi.
+                            </p>
+
+                            <pre><code class="language-python">print("Intersecție:")
+print(primes &amp; evens)</code></pre>
+
+                            <p>
+                                În acest exemplu, rezultatul este <code>{2}</code>, deoarece numărul
+                                <code>2</code> apare în ambele seturi.
+                            </p>
+
+                            <p>
+                                Putem folosi și metoda:
+                            </p>
+
+                            <pre><code class="language-python">print(primes.intersection(evens))</code></pre>
+
+                            <h4>Diferența</h4>
+
+                            <p>
+                                Diferența păstrează elementele care există în primul set, dar nu
+                                există în al doilea.
+                            </p>
+
+                            <pre><code class="language-python">print("Diferență:")
+print(primes - evens)</code></pre>
+
+                            <p>
+                                Putem folosi și metoda:
+                            </p>
+
+                            <pre><code class="language-python">print(primes.difference(evens))</code></pre>
+
+                            <p>
+                                Atenție: ordinea contează.
+                            </p>
+
+                            <pre><code class="language-python">print(primes - evens)
+print(evens - primes)</code></pre>
+
+                            <h3>12. Adăugarea elementelor într-un Set</h3>
+
+                            <p>
+                                Pentru a adăuga un singur element într-un set, folosim metoda
+                                <code>add()</code>.
+                            </p>
+
+                            <pre><code class="language-python">primes = {2, 3, 5, 7}
+
+print("Înainte:")
+print(primes)
+
+primes.add(11)
+
+print("După adăugare:")
+print(primes)</code></pre>
+
+                            <p>
+                                Dacă elementul există deja, Python nu îl va adăuga din nou.
+                            </p>
+
+                            <pre><code class="language-python">primes.add(5)
+
+print(primes)</code></pre>
+
+                            <h3>13. Eliminarea elementelor dintr-un Set</h3>
+
+                            <p>
+                                Pentru a elimina un element, putem folosi metoda
+                                <code>remove()</code>.
+                            </p>
+
+                            <pre><code class="language-python">primes.remove(11)
+
+print(primes)</code></pre>
+
+                            <p>
+                                Dacă elementul nu există, metoda <code>remove()</code> produce o
+                                eroare.
+                            </p>
+
+                            <p>
+                                O variantă mai sigură este metoda <code>discard()</code>.
+                            </p>
+
+                            <pre><code class="language-python">primes.discard(100)
+
+print(primes)</code></pre>
+
+                            <p>
+                                Dacă valoarea <code>100</code> nu există, programul continuă fără
+                                eroare.
+                            </p>
+
+                            <h3>14. Seturile sunt modificabile</h3>
+
+                            <p>
+                                Seturile sunt <strong>mutabile</strong>, ceea ce înseamnă că putem
+                                adăuga și elimina elemente după ce setul a fost creat.
+                            </p>
+
+                            <p>
+                                Totuși, elementele din interiorul unui set trebuie să fie valori care
+                                nu se modifică, precum numere, stringuri sau tuple.
+                            </p>
+
+                            <h3>Rezumat</h3>
+
+                            <p>
+                                În această lecție ai învățat:
+                            </p>
+
+                            <ul>
+                                <li>ce este un dicționar;</li>
+                                <li>cum creezi dicționare folosind <code>{}</code> și <code>dict()</code>;</li>
+                                <li>cum accesezi valorile unui dicționar;</li>
+                                <li>cum folosești metoda <code>get()</code>;</li>
+                                <li>cum folosești <code>keys()</code>, <code>values()</code> și <code>items()</code>;
+                                </li>
+                                <li>ce este un set;</li>
+                                <li>cum elimini valorile duplicate;</li>
+                                <li>cum faci uniunea, intersecția și diferența dintre seturi;</li>
+                                <li>cum adaugi și elimini elemente dintr-un set;</li>
+                                <li>diferența dintre <code>remove()</code> și <code>discard()</code>.</li>
+                            </ul>
+
+                            <h3>Încheiere</h3>
+
+                            <p>
+                                Acum știi să lucrezi cu <strong>dicționare</strong> și
+                                <strong>seturi</strong>, două dintre cele mai utile structuri de date
+                                din Python.
+                            </p>
+
+                            <p>
+                                Dicționarele te ajută să organizezi informațiile folosind perechi
+                                cheie – valoare, iar seturile te ajută să păstrezi valori unice și să
+                                elimini duplicatele.
+                            </p>
+
+                            <p>
+                                În lecția următoare vom învăța despre
+                                <strong>tupluri, liste avansate și mutabilitate</strong>, pentru a
+                                putea începe să construim programe mai complexe.
+                            </p>
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=Xndb9C83Twg&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=2"
+                                target="_blank" rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+                    <!-- DIALOGUL LECȚIEI 9-->
+                    <dialog id="lectia-python-9">
+                        <iframe src="https://www.youtube.com/embed/hMUnOtcDEh0?si=kAX4gDArtlk8_mWW"
+                            title="Condiții în Python " allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Condiții în Python </h3>
+                        <p>Astăzi învățăm condițiile din Python: if, elif și else.
+                            Astea sunt baza oricărei logici.
+                            Dacă înțelegi lecția asta, poți deja să construiești mini-aplicații reale
+                        </p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <h3>Introducere</h3>
+
+                            <p>
+                                Astăzi vom învăța unul dintre cele mai importante concepte din
+                                programare: <strong>condițiile</strong>.
+                            </p>
+
+                            <p>
+                                În Python folosim instrucțiunile <code>if</code>,
+                                <code>elif</code> și <code>else</code> pentru a lua decizii.
+                            </p>
+
+                            <p>
+                                Aproape orice aplicație folosește condiții:
+                            </p>
+
+                            <ul>
+                                <li>verificarea unui cont de utilizator;</li>
+                                <li>verificarea vârstei;</li>
+                                <li>calcularea reducerilor;</li>
+                                <li>validarea datelor introduse;</li>
+                                <li>reguli într-un joc;</li>
+                                <li>afișarea notificărilor.</li>
+                            </ul>
+
+                            <h3>1. Ce este o condiție?</h3>
+
+                            <p>
+                                O condiție este o întrebare la care programul poate răspunde doar cu
+                                <strong>True</strong> sau <strong>False</strong>.
+                            </p>
+
+                            <p>
+                                Dacă răspunsul este adevărat, Python execută un anumit bloc de cod.
+                                Dacă răspunsul este fals, poate executa alt bloc de cod.
+                            </p>
+
+                            <p>Sintaxa este foarte simplă:</p>
+
+                            <pre><code class="language-python">if conditie:
+    # cod executat dacă rezultatul este True</code></pre>
+
+                            <p>
+                                Observă cele două puncte <code>:</code> și indentarea codului.
+                                În Python, indentarea este obligatorie.
+                            </p>
+
+                            <h3>2. Exemplu practic - Verificarea unui Login</h3>
+
+                            <p>
+                                Să presupunem că avem un sistem simplu de autentificare.
+                            </p>
+
+                            <pre><code class="language-python">user = "carla"
+password = "1234"
+
+if user == "carla" and password == "1234":
+    print("Login reușit!")
+else:
+    print("Date greșite!")</code></pre>
+
+                            <p>
+                                Programul verifică dacă utilizatorul și parola sunt corecte.
+                            </p>
+
+                            <p>
+                                Dacă ambele condiții sunt adevărate, utilizatorul se poate conecta.
+                                În caz contrar, este afișat un mesaj de eroare.
+                            </p>
+
+                            <p>
+                                Exact acest principiu este folosit și de majoritatea site-urilor și
+                                aplicațiilor.
+                            </p>
+
+                            <h3>3. if, elif și else</h3>
+
+                            <p>
+                                Uneori avem mai multe posibilități, nu doar două.
+                            </p>
+
+                            <p>
+                                În acest caz folosim <code>elif</code>, care înseamnă
+                                <strong>"altfel, dacă"</strong>.
+                            </p>
+
+                            <pre><code class="language-python">age = 16
+
+if age >= 18:
+    print("Ești adult.")
+elif age >= 13:
+    print("Ești adolescent.")
+else:
+    print("Ești copil.")</code></pre>
+
+                            <p>
+                                Python verifică condițiile de sus în jos.
+                            </p>
+
+                            <ul>
+                                <li>dacă prima condiție este adevărată, celelalte nu mai sunt verificate;</li>
+                                <li>dacă prima este falsă, Python verifică instrucțiunea <code>elif</code>;</li>
+                                <li>dacă nici aceasta nu este adevărată, execută blocul <code>else</code>.</li>
+                            </ul>
+
+                            <h3>4. Exemplu practic - Reducere într-un magazin online</h3>
+
+                            <p>
+                                Condițiile sunt folosite foarte des în magazinele online pentru a
+                                calcula reducerile.
+                            </p>
+
+                            <pre><code class="language-python">total = 320
+
+if total > 500:
+    print("Reducere 20%")
+elif total > 300:
+    print("Reducere 10%")
+else:
+    print("Nicio reducere")</code></pre>
+
+                            <p>
+                                În acest exemplu:
+                            </p>
+
+                            <ul>
+                                <li>dacă valoarea coșului este mai mare de 500, clientul primește 20% reducere;</li>
+                                <li>dacă este mai mare de 300, primește 10% reducere;</li>
+                                <li>în rest, nu primește nicio reducere.</li>
+                            </ul>
+
+                            <p>
+                                Același tip de logică este folosit de majoritatea magazinelor online.
+                            </p>
+                            <h3>5. Comparatorii în Python</h3>
+
+                            <p>
+                                Pentru ca Python să poată lua decizii, trebuie să comparăm valori.
+                            </p>
+
+                            <p>
+                                Cei mai utilizați operatori de comparație sunt:
+                            </p>
+
+                            <ul>
+                                <li><code>==</code> → egal cu</li>
+                                <li><code>!=</code> → diferit de</li>
+                                <li><code>&gt;</code> → mai mare decât</li>
+                                <li><code>&lt;</code> → mai mic decât</li>
+                                <li><code>&gt;=</code> → mai mare sau egal</li>
+                                <li><code>&lt;=</code> → mai mic sau egal</li>
+                            </ul>
+
+                            <p>Exemplu:</p>
+
+                            <pre><code class="language-python">age = 18
+
+print(age == 18)
+print(age != 18)
+print(age > 18)
+print(age >= 18)</code></pre>
+
+                            <p>
+                                Fiecare comparație va întoarce una dintre valorile
+                                <strong>True</strong> sau <strong>False</strong>.
+                            </p>
+
+                            <h3>6. Operatorii logici</h3>
+
+                            <p>
+                                Uneori trebuie să verificăm mai multe condiții în același timp.
+                            </p>
+
+                            <p>
+                                Pentru asta folosim operatorii logici:
+                            </p>
+
+                            <ul>
+                                <li><code>and</code> → toate condițiile trebuie să fie adevărate;</li>
+                                <li><code>or</code> → este suficient ca una dintre condiții să fie adevărată;</li>
+                                <li><code>not</code> → inversează rezultatul unei condiții.</li>
+                            </ul>
+
+                            <h4>Operatorul and</h4>
+
+                            <pre><code class="language-python">age = 25
+has_ticket = True
+
+if age >= 18 and has_ticket:
+    print("Poți intra.")</code></pre>
+
+                            <p>
+                                Programul execută codul doar dacă ambele condiții sunt adevărate.
+                            </p>
+
+                            <h4>Operatorul or</h4>
+
+                            <pre><code class="language-python">is_admin = False
+is_owner = True
+
+if is_admin or is_owner:
+    print("Acces permis.")</code></pre>
+
+                            <p>
+                                Este suficient ca una dintre condiții să fie adevărată.
+                            </p>
+
+                            <h4>Operatorul not</h4>
+
+                            <pre><code class="language-python">logged_in = False
+
+if not logged_in:
+    print("Te rugăm să te autentifici.")</code></pre>
+
+                            <p>
+                                Operatorul <code>not</code> inversează rezultatul unei condiții.
+                            </p>
+
+                            <h3>7. Exercițiul 1 - Verifică vârsta</h3>
+
+                            <p>
+                                Scrie un program care verifică dacă o persoană este adult sau minor.
+                            </p>
+
+                            <pre><code class="language-python">age = int(input("Introdu vârsta: "))
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")</code></pre>
+
+                            <h3>8. Exercițiul 2 - Număr par sau impar</h3>
+
+                            <p>
+                                Folosește operatorul modulo <code>%</code> pentru a verifica dacă un
+                                număr este par sau impar.
+                            </p>
+
+                            <pre><code class="language-python">number = int(input("Introdu un număr: "))
+
+if number % 2 == 0:
+    print("Număr par")
+else:
+    print("Număr impar")</code></pre>
+
+                            <h3>9. Exercițiul 3 - Evaluarea unei note</h3>
+
+                            <p>
+                                Creează un program care afișează un mesaj în funcție de nota obținută.
+                            </p>
+
+                            <pre><code class="language-python">grade = int(input("Introdu nota: "))
+
+if grade >= 9:
+    print("Excelent!")
+elif grade >= 7:
+    print("Bine!")
+else:
+    print("Mai încearcă!")</code></pre>
+
+                            <h3>Rezumat</h3>
+
+                            <p>
+                                În această lecție ai învățat:
+                            </p>
+
+                            <ul>
+                                <li>cum funcționează instrucțiunea <code>if</code>;</li>
+                                <li>cum folosești <code>elif</code> și <code>else</code>;</li>
+                                <li>operatorii de comparație;</li>
+                                <li>operatorii logici <code>and</code>, <code>or</code> și <code>not</code>;</li>
+                                <li>cum să construiești programe care iau decizii;</li>
+                                <li>cum să exersezi folosind exemple din viața reală.</li>
+                            </ul>
+
+                            <h3>Încheiere</h3>
+
+                            <p>
+                                Acum știi cum funcționează condițiile în Python și poți crea programe
+                                care iau decizii în funcție de informațiile primite.
+                            </p>
+
+                            <p>
+                                Condițiile reprezintă baza majorității aplicațiilor moderne, de la
+                                autentificare și magazine online până la jocuri și inteligență
+                                artificială.
+                            </p>
+
+                            <p>
+                                În lecția următoare vom învăța despre
+                                <strong>buclele <code>for</code> și <code>while</code></strong>, care
+                                ne permit să repetăm automat acțiuni fără să scriem același cod de mai
+                                multe ori.
+                            </p>
+
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/watch?v=hMUnOtcDEh0&list=PLm-HiL4xZDxmJgAIzckxHiA7PAcZ2GkQE&index=1"
+                                target="_blank" rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+
+
+                    <!-- DIALOGUL LECȚIEI 10-->
+                    <dialog id="lectia-python-10">
+                        <iframe src="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ"
+                            title="Cum Instalezi și Rulezi Python – Primii tăi Pași în Programare" allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Cum sa intalezi si sa rulzi Python</h3>
+                        <p></p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p>
+                            </p>
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ" target="_blank"
+                                rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+                    <!-- DIALOGUL LECȚIEI 11-->
+                    <dialog id="lectia-python-11">
+                        <iframe src="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ"
+                            title="Cum Instalezi și Rulezi Python – Primii tăi Pași în Programare" allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h4>Cum sa intalezi si sa rulzi Python</h4>
+                        <p></p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p>
+                            </p>
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ" target="_blank"
+                                rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+                    <!-- DIALOGUL LECȚIEI 12-->
+                    <dialog id="lectia-python-12">
+                        <iframe src="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ"
+                            title="Cum Instalezi și Rulezi Python – Primii tăi Pași în Programare" allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Cum sa intalezi si sa rulzi Python</h3>
+                        <p></p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p>
+                            </p>
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ" target="_blank"
+                                rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+
+
+                    <!-- DIALOGUL LECȚIEI 13-->
+                    <dialog id="lectia-python-13">
+                        <iframe src="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ"
+                            title="Cum Instalezi și Rulezi Python – Primii tăi Pași în Programare" allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h3>Cum sa intalezi si sa rulzi Python</h3>
+                        <p></p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p>
+                            </p>
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ" target="_blank"
+                                rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
+
+
+                    <!-- DIALOGUL LECȚIEI 14-->
+                    <dialog id="lectia-python-14">
+                        <iframe src="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ"
+                            title="Cum Instalezi și Rulezi Python – Primii tăi Pași în Programare" allowfullscreen>
+                        </iframe>
+
+                        <!-- 2. Titlu + descriere + durată -->
+                        <h4>Cum sa intalezi si sa rulzi Python</h4>
+                        <p></p>
+                        <p class="lectie-durata">Durată: 03:14</p>
+
+                        <!-- 3. Scriptul lecției, pliat -->
+                        <details>
+                            <summary>Vezi scriptul lecției</summary>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p>
+                            </p>
+                        </details>
+                        <!-- 4. Exercițiul (link Google Drive) -->
+                        <p><a href="LINK_DRIVE_AICI" target="_blank" rel="noopener noreferrer">
+                                📝 Descarcă exercițiul</a></p>
+
+                        <!-- 5. Soluția, pliată (link GitHub) -->
+                        <details>
+                            <summary>Vezi soluția</summary>
+                            <p><a href="LINK_GITHUB_AICI" target="_blank" rel="noopener noreferrer">
+                                    Soluția pe GitHub</a></p>
+                        </details>
+
+                        <!-- 6. Feedback -->
+                        <p class="lectie-feedback">Ți-a plăcut lecția?
+                            <a href="https://www.youtube.com/embed/htR4qnurR2U?si=sR-dBKdDJM4o26QJ" target="_blank"
+                                rel="noopener noreferrer">Lasă un
+                                like sau un comentariu pe YouTube</a> 💛
+                        </p>
+
+                        <!-- 7. Buton de închidere — form method="dialog" închide fără JavaScript -->
+                        <form method="dialog">
+                            <button class="btn btn-amber">Închide</button>
+                        </form>
+                    </dialog>
                 </div>
             </div>
         </section>
 
         <!--BODY-CURSURI DE SECURITATE CIBERNETICA-->
+        <!--nu uita Secțiunea Securitate (goală)	—	va primi <h2>-->
         <div class="motif-border" aria-hidden="true"></div>
         <section id="securitate" class="securitate-cibernetica section">
             <div class="container securitate-grid">
@@ -174,6 +2963,7 @@
         </section>
 
         <!--BODY-CURSURI DE INTELIGENTA ARTIFICIALA-->
+        <!--nu uita Secțiunea Securitate (goală)	—	va primi <h2>-->
         <div class="motif-border" aria-hidden="true"></div>
         <section id="inteligenta-artificiala" class="inteligenta-artificiala section">
 
@@ -204,6 +2994,8 @@
                         <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut. Te poți
                             dezabona
                             oricând.</p>
+
+                    </form>
                 </div>
             </div>
         </section>
@@ -234,6 +3026,7 @@
 
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
