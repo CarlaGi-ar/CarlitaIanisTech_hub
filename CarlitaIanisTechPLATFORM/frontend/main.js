@@ -18,6 +18,7 @@ if (ghidForm) {
 
         const emailInput = ghidForm.querySelector("input[type='email']");
         const submitBtn = ghidForm.querySelector("button");
+        const originalText = submitBtn.textContent;
         const email = emailInput.value.trim();
 
         // Validare simplă
@@ -51,7 +52,7 @@ if (ghidForm) {
             showFormMessage("Ceva nu a mers. Încearcă din nou, te rog.", "eroare");
         } finally {
             submitBtn.disabled = false;
-            submitBtn.textContent = "Trimite-mi ghidul";
+            submitBtn.textContent = originalText;
         }
     });
 }
@@ -76,3 +77,78 @@ function showFormMessage(text, tip) {
         setTimeout(() => mesaj.remove(), 5000);
     }
 }
+
+
+/* ==========================================================
+   ȘTIRI — construite automat din lista STIRI (stiri-data.js)
+   Nu modifici nimic aici. Tu editezi doar stiri-data.js.
+   ========================================================== */
+
+// Transformă "2026-08-12" în "12 august 2026"
+function formatData(iso) {
+    if (!iso) return "";
+    const luni = ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie",
+        "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"];
+    const p = iso.split("-"); // AAAA-LL-ZZ
+    if (p.length !== 3) return iso;
+    const zi = parseInt(p[2], 10);
+    const luna = luni[parseInt(p[1], 10) - 1] || "";
+    return zi + " " + luna + " " + p[0];
+}
+
+const gridStiri = document.querySelector(".stiri-grid");
+const dialogStire = document.getElementById("stire-dialog");
+
+// Deschide dialogul partajat cu datele știrii apăsate
+function deschideStire(stire) {
+    if (!dialogStire) return;
+    dialogStire.querySelector("iframe").src = "https://www.youtube.com/embed/" + stire.id;
+    dialogStire.querySelector(".stire-dialog-titlu").textContent = stire.titlu;
+    dialogStire.querySelector(".stire-dialog-data").textContent = formatData(stire.data);
+    dialogStire.querySelector(".stire-dialog-link").href = "https://youtu.be/" + stire.id;
+    dialogStire.showModal();
+}
+
+// Construiește cardurile (doar dacă suntem pe pagina de știri)
+if (gridStiri && typeof STIRI !== "undefined") {
+
+    // Sortăm: cele noi primele (după dată, descrescător)
+    const listaSortata = [...STIRI].sort((a, b) => (b.data || "").localeCompare(a.data || ""));
+
+    listaSortata.forEach(function (stire) {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = "stire-card";
+        card.dataset.categorii = stire.categorii || "";
+        card.innerHTML =
+            '<img class="stire-coperta" src="https://img.youtube.com/vi/' + stire.id + '/hqdefault.jpg" alt="">' +
+            '<div class="stire-info">' +
+            '<h3 class="stire-titlu">' + stire.titlu + '</h3>' +
+            '<p class="stire-data">' + formatData(stire.data) + '</p>' +
+            '</div>';
+        card.addEventListener("click", function () { deschideStire(stire); });
+        gridStiri.appendChild(card);
+    });
+}
+
+/*--FILTRE ȘTIRI--*/
+const filtreStiri = document.querySelectorAll(".stiri-filtru");
+
+filtreStiri.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        // scoate „activ" de pe toate, pune-l pe cel apăsat
+        filtreStiri.forEach(b => b.classList.remove("activ"));
+        btn.classList.add("activ");
+
+        const filtru = btn.dataset.filtru;
+
+        document.querySelectorAll(".stire-card").forEach(function (card) {
+            const categorii = (card.dataset.categorii || "").split(" ");
+            if (filtru === "toate" || categorii.includes(filtru)) {
+                card.style.display = "";       // arată
+            } else {
+                card.style.display = "none";   // ascunde
+            }
+        });
+    });
+});
