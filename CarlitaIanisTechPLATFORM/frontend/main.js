@@ -80,8 +80,8 @@ function showFormMessage(text, tip) {
 
 
 /* ==========================================================
-   ȘTIRI — construite automat din lista STIRI (stiri-data.js)
-   Nu modifici nimic aici. Tu editezi doar stiri-data.js.
+ȘTIRI — construite automat din lista STIRI (stiri-data.js)
+Nu modifici nimic aici. Tu editezi doar stiri-data.js.
    ========================================================== */
 
 // Transformă "2026-08-12" în "12 august 2026"
@@ -121,7 +121,7 @@ if (gridStiri && typeof STIRI !== "undefined") {
         card.className = "stire-card";
         card.dataset.categorii = stire.categorii || "";
         card.innerHTML =
-            '<img class="stire-coperta" src="https://img.youtube.com/vi/' + stire.id + '/hqdefault.jpg" alt="">' +
+            '<img class="stire-coperta" src="https://img.youtube.com/vi/' + stire.id + '/hq720.jpg" alt="">' +
             '<div class="stire-info">' +
             '<h3 class="stire-titlu">' + stire.titlu + '</h3>' +
             '<p class="stire-data">' + formatData(stire.data) + '</p>' +
