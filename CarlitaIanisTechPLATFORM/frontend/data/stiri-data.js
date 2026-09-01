@@ -67,7 +67,7 @@ const STIRI = [
     { id: "2uZBt00EYPA", data: "2026-07-19", categorii: "ai romania inovatii",           titlu: "Anglia și AI" },
     { id: "4PL2xESbqsY", data: "2026-07-24", categorii: "securitate google scandaluri", titlu: "Google da in judecata hackerii" },
     { id: "TSsBJkBhbUg", data: "2026-07-26", categorii: "securitate scandaluri", titlu: "Atacuri cibernetice în 2026" },
-    { id: "HpmzcgETWw", data: "2026-08-22", categorii: "meta inovatii",         titlu: "Meta și cipurile" },
+    { id: "-HpmzcgETWw", data: "2026-08-22", categorii: "meta inovatii",         titlu: "Meta și cipurile" },
     { id: "UE3Xp1Suq_M", data: "2026-07-22", categorii: "inovatii",              titlu: "Assassin's Creed" },
     { id: "9DzZrx62Fq4", data: "2026-08-24", categorii: "roboti inovatii",       titlu: "Cursa umanoizilor" },
     { id: "KxFk2XKmsvM", data: "2026-08-26", categorii: "apple chatgpt ai scandaluri",      titlu: "Scandalul Apple și OpenAI" },

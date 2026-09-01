@@ -797,6 +797,7 @@ a {
 
 
 }
+
 /*===== CURSURI =====*/
 
 /* Fundaluri alternate pe secțiuni */
@@ -827,19 +828,23 @@ a {
 
 /* Chevron — starea normală (închis) */
 .chevron {
-    display: inline-block;              /* fără asta, transform nu funcționează */
-    transition: transform 0.3s ease;    /* rotație lină, nu bruscă */
+    display: inline-block;
+    /* fără asta, transform nu funcționează */
+    transition: transform 0.3s ease;
+    /* rotație lină, nu bruscă */
 }
 
 /* Chevron — starea deschisă */
 details[open] .chevron {
-    transform: rotate(180deg);          /* ▼ devine ▲ */
+    transform: rotate(180deg);
+    /* ▼ devine ▲ */
 }
 
 /* Rândul unei lecții în listă */
 .lectie-rand {
     display: flex;
-    justify-content: space-between;   /* titlul la stânga, durata la dreapta */
+    justify-content: space-between;
+    /* titlul la stânga, durata la dreapta */
     align-items: center;
     width: 100%;
     padding: 0.9rem 1.2rem;
@@ -856,25 +861,31 @@ details[open] .chevron {
 
 .lectie-rand:hover {
     background: var(--pergament);
-    transform: translateX(4px);       /* mică alunecare la hover — subtil, elegant */
+    transform: translateX(4px);
+    /* mică alunecare la hover — subtil, elegant */
 }
 
 .lectie-durata {
     opacity: 0.6;
     font-size: 0.9rem;
 }
+
 /*===== DIALOG LECȚIE =====*/
 
 dialog {
     /* dialog e centrat automat de browser — noi doar îl îmbrăcăm frumos */
-    width: min(90vw, 480px);          /* max 480px, dar pe telefon 90% din ecran */
-    max-height: 85vh;            /* niciodată mai înalt de 85% din ecran */
-    overflow-y: auto;            /* dacă nu încape, apare scroll ÎN dialog */
+    width: min(90vw, 480px);
+    /* max 480px, dar pe telefon 90% din ecran */
+    max-height: 85vh;
+    /* niciodată mai înalt de 85% din ecran */
+    overflow-y: auto;
+    /* dacă nu încape, apare scroll ÎN dialog */
     border: none;
     border-radius: 12px;
     padding: 1.5rem;
     background: var(--alb-cald);
-    text-align: center;               /* totul pe mijloc, cum ai vrut */
+    text-align: center;
+    /* totul pe mijloc, cum ai vrut */
 }
 
 /* Fundalul întunecat din spatele dialogului */
@@ -885,11 +896,13 @@ dialog::backdrop {
 /* Videoclipul — vertical (Shorts), centrat, mai mare */
 dialog iframe {
     width: 250px;
-    aspect-ratio: 9 / 16;             /* format vertical de Shorts */
+    aspect-ratio: 9 / 16;
+    /* format vertical de Shorts */
     border: none;
     border-radius: 10px;
     display: block;
-    margin: 0 auto 1rem;              /* auto stânga-dreapta = centrat */
+    margin: 0 auto 1rem;
+    /* auto stânga-dreapta = centrat */
 }
 
 /* Details din dialog — săgeata rămâne lizibilă și centrat arată curat */
@@ -906,10 +919,12 @@ dialog summary {
 dialog form[method="dialog"] {
     margin-top: 1rem;
 }
+
 /*pentru telefon */
 @media (max-width: 600px) {
     .lectie-rand {
-        flex-direction: column;      /* titlul sus, durata dedesubt */
+        flex-direction: column;
+        /* titlul sus, durata dedesubt */
         align-items: flex-start;
         gap: 0.3rem;
     }
@@ -928,7 +943,8 @@ dialog form[method="dialog"] {
 }
 
 .stiri-filtru {
-    flex: 0 0 auto;                 /* nu se micșorează, stă pe o linie */
+    flex: 0 0 auto;
+    /* nu se micșorează, stă pe o linie */
     padding: 8px 18px;
     border-radius: 999px;
     border: 1px solid var(--pergament-2);
@@ -981,7 +997,8 @@ dialog form[method="dialog"] {
 }
 
 .stire-card:hover .stire-coperta {
-    transform: scale(1.02);         /* mică mărire la hover, elegant */
+    transform: scale(1.02);
+    /* mică mărire la hover, elegant */
 }
 
 .stire-info {
@@ -989,7 +1006,8 @@ dialog form[method="dialog"] {
 }
 
 .stire-titlu {
-    font-family: inherit;           /* curat, ca la YouTube — nu Fraunces */
+    font-family: inherit;
+    /* curat, ca la YouTube — nu Fraunces */
     font-size: 1rem;
     font-weight: 700;
     color: var(--noapte);
@@ -1015,4 +1033,212 @@ dialog form[method="dialog"] {
     aspect-ratio: 16 / 9;
     height: auto;
     margin-bottom: 1rem;
+}
+
+/* ============================================================
+   POVESTEA MEA  (versiune curată — tot CSS-ul stă aici, în style.css)
+   ============================================================ */
+
+:root {
+    --pv-panel: #F6F0E2;
+    /* panoul ferestrei */
+    --pv-burgundy: #40121F;
+    /* titluri închise */
+    --pv-wine: #6E2537;
+    --pv-aramiu: #B08A4A;
+    --pv-rosu: #C0392B;
+    --pv-text: #3A2B24;
+    --pv-line: rgba(64, 18, 31, .15);
+}
+
+/* ---------- CUPRINS ---------- */
+.cuprins-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 1.6rem auto 0;
+    padding: 0;
+}
+
+.cuprins-list li+li {
+    border-top: 1px dashed var(--pv-line);
+}
+
+.cuprins-list a {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: .9rem .5rem;
+    text-decoration: none;
+    color: var(--pv-burgundy);
+    transition: color .15s ease;
+}
+
+.cuprins-list a:hover {
+    color: var(--pv-rosu);
+}
+
+.cuprins-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    color: var(--pv-aramiu);
+    min-width: 2em;
+    font-size: 1.15rem;
+}
+
+/* ---------- FEREASTRA CU POVESTEA ---------- */
+.poveste-cadru {
+    width: min(760px, 92%);
+    margin: 0 auto;
+    background: var(--pv-panel);
+    border-radius: 14px;
+    padding: clamp(1.6rem, 4vw, 3.2rem);
+    box-shadow:
+        0 0 0 1px var(--pv-aramiu),
+        0 0 0 7px var(--pv-panel),
+        0 0 0 8px var(--pv-line),
+        0 22px 50px rgba(64, 18, 31, .12);
+}
+
+/* rama foto de la începutul fiecărui capitol (se ascunde singură dacă poza lipsește) */
+.cap-poza {
+    max-width: 440px;
+    margin: 0 auto 1.6rem;
+    background: #fff;
+    padding: .6rem;
+    border: 1px solid var(--pv-aramiu);
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(64, 18, 31, .14);
+}
+
+.cap-poza img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.cap {
+    scroll-margin-top: 90px;
+}
+
+.cap-eyebrow {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: .74rem;
+    font-weight: 700;
+    color: var(--pv-aramiu);
+    margin: 0 0 .4rem;
+}
+
+.cap-titlu {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(1.7rem, 4vw, 2.3rem);
+    line-height: 1.15;
+    color: var(--pv-burgundy);
+    margin: 0 0 1.6rem;
+}
+
+.cap-body {
+    font-size: 1.16rem;
+    line-height: 1.85;
+    color: var(--pv-text);
+}
+
+.cap-body p {
+    margin: 0 0 1.2rem;
+}
+
+.cap-body h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.42rem;
+    color: var(--pv-wine);
+    margin: 2.4rem 0 1rem;
+}
+
+.cap-body h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.18rem;
+    color: var(--pv-aramiu);
+    margin: 1.9rem 0 .7rem;
+}
+
+.cap-body strong {
+    color: var(--pv-wine);
+    font-weight: 700;
+}
+
+.cap-body em {
+    font-style: italic;
+}
+
+/* inițială mare pe primul paragraf al poveștii */
+.cap--first .cap-body>p:first-of-type::first-letter {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--pv-wine);
+    float: left;
+    font-size: 3.4rem;
+    line-height: .82;
+    padding: .3rem .5rem 0 0;
+}
+
+/* despărțitor între capitole (× × × × ×) */
+.cap-divider {
+    text-align: center;
+    color: var(--pv-aramiu);
+    letter-spacing: .55em;
+    font-size: 1rem;
+    margin: 3rem 0 2.4rem;
+}
+
+/* ---------- MULȚUMESC ---------- */
+/* forțăm centrarea (anulează max-width:560px moștenit din .despre-CarlitaIanisTech) */
+.multumesc-center {
+    text-align: center;
+}
+
+#multumesc,
+#multumesc .section-title,
+#multumesc h2,
+#multumesc .eyebrow,
+#multumesc .cusatura-titlu,
+#multumesc .sub {
+    text-align: center;
+}
+
+#multumesc h2 {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* semnătura caligrafică — auriu, ca să se vadă pe fundalul vișiniu */
+.semnatura {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(3.2rem, 9vw, 5rem);
+    color: #E3C07E;
+    line-height: 1;
+    margin: 1rem 0 1.6rem;
+    text-align: center;
+}
+
+/* butonul — auriu cu text închis, contrast clar pe vișiniu */
+.btn-cursuri {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #3A1720;
+    background: #CBA24A;
+    padding: .9rem 1.9rem;
+    border-radius: 999px;
+    transition: background .15s ease, transform .15s ease;
+}
+
+.btn-cursuri:hover {
+    background: #B98F3B;
+    transform: translateY(-2px);
 }
