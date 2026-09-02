@@ -247,6 +247,21 @@
             </div>
 
         </div>
+        <!-- ======= IANIS — botul de întrebări ======= -->
+<button id="ianis-buton" class="chat-fab" aria-label="Întreabă-l pe Ianis">🤖</button>
+
+<div id="ianis-panou" class="ianis-panou" hidden>
+    <div class="ianis-header">
+        <span>🤖 Ianis</span>
+        <button id="ianis-inchide" class="ianis-inchide" aria-label="Închide">×</button>
+    </div>
+    <div id="ianis-mesaje" class="ianis-mesaje"></div>
+    <div id="ianis-sugestii" class="ianis-sugestii"></div>
+    <form id="ianis-form" class="ianis-form">
+        <input id="ianis-input" type="text" placeholder="Scrie o întrebare..." autocomplete="off">
+        <button type="submit" aria-label="Trimite">➤</button>
+    </form>
+</div>
     </footer>
     <!-- Întâi lista de știri, apoi scriptul -->
     <script src="data/stiri-data.js"></script>
@@ -260,6 +275,7 @@
     });
 </script>
     <script src="main.js"></script>
+    <script src="ianis.js"></script>
 </body>
 
 </html>

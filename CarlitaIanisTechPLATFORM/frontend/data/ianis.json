@@ -1,0 +1,131 @@
+{
+    "salut": "Salut! 👋 Sunt Ianis, robotul Carlitei. Mă poți întreba despre cursuri, Python, AI, siguranță online sau cum să începi. Alege o întrebare de mai jos sau scrie-mi tu una. 😊",
+    "necunoscut": "Hmm, asta încă nu știu s-o răspund. 🤔 Dar întreabă-mă despre cursuri, Python, AI, siguranță online, diplomă sau abonare — ori scrie-i direct Carlitei pe TikTok sau YouTube!",
+    "mesaj_injuraturi": "🚫 Comunitatea Carlita & Ianis Tech nu acceptă acest limbaj. Aici vorbim cu respect. Dacă ai o întrebare adevărată despre cursuri, Python sau siguranță online, sunt bucuros să te ajut. 💛",
+    "injuraturi": ["fut", "futu", "futut", "fute", "futem", "pula", "pule", "pizda", "pizde", "muie", "morti", "mortii", "mata", "dracu", "dracului", "satana", "sugi", "laba", "omor", "omori", "omoara", "tai", "impusc", "impusca", "impuscat", "violez", "viol"],
+    "sugestii": ["Ce cursuri aveți?", "Este gratis?", "Cum mă protejez online?", "Ce primesc dacă mă abonez?"],
+    "raspunsuri": [
+        {
+            "cuvinte": ["ce primesc daca ma abonez", "daca ma abonez", "ce primesc abonare", "ce castig", "ce imi dai", "ce primesc"],
+            "raspuns": "Dacă te abonezi, primești GRATUIT „Ghidul siguranței digitale pentru familia ta” (cele mai frecvente 7 escrocherii și cum le recunoști) plus un singur email pe săptămână, cu ce merită știut. Fără spam. ✉️",
+            "link": { "text": "Mă abonez 📩", "url": "#aboneazate" }
+        },
+        {
+            "cuvinte": ["dezabonez", "dezabonare", "ma sterg", "nu mai vreau email", "renunt la abonare", "cum ies"],
+            "raspuns": "Foarte simplu: la finalul FIECĂRUI email ai un link „Dezabonare” (Unsubscribe). Un click și gata — nu mai primești nimic. Ești mereu liberă să pleci. 🙂"
+        },
+        {
+            "cuvinte": ["ce scoala", "unde invata carla", "ce facultate", "studii carla", "ce studiaza"],
+            "raspuns": "Carla e studentă la Computer Science – Inteligență Artificială, în Anglia. A pornit de la zero la 35 de ani, așa că e dovada vie că se poate la orice vârstă. 🎓"
+        },
+        {
+            "cuvinte": ["unde este carla", "unde e carlita", "unde locuieste", "unde sta carla", "unde traieste"],
+            "raspuns": "Carla locuiește și studiază în Anglia, la Plymouth — dar are rădăcinile în Valea Jiului, România. Face totul pentru comunitatea de acasă și din diaspora. 🇷🇴💛"
+        },
+        {
+            "cuvinte": ["colecteaza datele", "imi ia datele", "date personale", "gdpr", "ce faceti cu datele", "imi folositi datele", "vindeti datele"],
+            "raspuns": "Nu colectez date fără voia ta. Singurul lucru pe care îl cer e adresa de email, DOAR dacă alegi să te abonezi — și o folosesc exclusiv ca să-ți trimit lecțiile și ghidul. Nu vând și nu dau datele tale nimănui. 🔒"
+        },
+        {
+            "cuvinte": ["cat de safe", "cat de sigur", "e sigur site", "sigura platforma", "e safe", "securitatea site"],
+            "raspuns": "Site-ul e simplu și sigur: nu ai nevoie de cont, nu îți cer parole și nu se salvează date despre tine. Singura informație e emailul — și doar dacă TU alegi să te abonezi. 🛡️"
+        },
+        {
+            "cuvinte": ["ce este cyber security", "ce e cyber security" , "ce inseamna cyber", "securitate cibernetica", "ce e cybersecurity", "ce inseamna securitate"],
+            "raspuns": "Cyber Security (securitatea cibernetică) înseamnă să-ți protejezi datele, banii și conturile online de hoți și escroci. Adică: parole bune, atenție la linkuri, și să știi cum arată o țeapă. Am o secțiune întreagă despre asta. 🛡️",
+            "link": { "text": "Vezi lecțiile de securitate 🛡️", "url": "cursuri.html" }
+        },
+        {
+            "cuvinte": ["cum ma protejez", "protectie online", "cum stau in siguranta", "cum ma feresc", "siguranta online", "cum sa fiu in siguranta"],
+            "raspuns": "3 reguli de aur: (1) parole lungi și diferite pentru fiecare cont, (2) nu da click pe linkuri din mesaje neașteptate, (3) nu da NIMĂNUI coduri sau parole la telefon. Ghidul gratuit îți explică tot, pe înțelesul tău. 💪",
+            "link": { "text": "Vreau ghidul gratuit 📩", "url": "#aboneazate" }
+        },
+        {
+            "cuvinte": ["furt online", "sa declar un furt", "raportez furt", "am fost inselata", "am fost teapa", "cum reclam", "unde reclam"],
+            "raspuns": "Pași rapizi: (1) fă capturi de ecran ca dovadă, (2) anunță banca dacă sunt bani implicați, (3) raportează la poliție. În România poți raporta incidentele online și la DNSC (dnsc.ro), iar la urgențe suni la 112. 🚨"
+        },
+        {
+            "cuvinte": ["date bancare", "mi-a furat cardul", "furat bani", "furat card", "date de card", "mi-au luat banii", "fraudă bancară"],
+            "raspuns": "Acționează IMEDIAT: (1) sună-ți banca și blochează cardul chiar acum, (2) schimbă parolele de la aplicația bancară, (3) fă capturi și anunță poliția. Cu cât suni mai repede la bancă, cu atât e mai ușor de oprit. 🏦🚨"
+        },
+        {
+            "cuvinte": ["ma suna si minte", "apel fals", "cum imi dau seama teapa", "escrocherie telefon", "apel suspect", "ma suna un escroc"],
+            "raspuns": "Semne clare de țeapă la telefon: te grăbește, cere bani sau coduri, se dă drept banca/poliția/o rudă în pericol. Regula de aur: ÎNCHIDE și sună TU înapoi pe numărul oficial. Nimeni cinstit nu-ți cere coduri la telefon. ☎️"
+        },
+        {
+            "cuvinte": ["voce clonata", "voce falsa", "ai voce", "clonare voce", "suna cu vocea", "vocea familiei", "deepfake voce"],
+            "raspuns": "Escrocii pot clona voci cu AI ca să pară că e copilul sau nepotul tău. Apărare: stabilește o „parolă de familie” pe care doar voi o știți, și dacă „ruda” cere bani urgent — închide și sună-o TU pe numărul ei real. Nu te lăsa presată. 🤖🔒"
+        },
+        {
+            "cuvinte": ["acreditat", "acreditare", "diploma", "diplome", "certificat", "recunoscut"],
+            "raspuns": "Cursurile mele sunt lecții practice și gratuite: te învață să faci lucruri reale. Nu sunt acreditate oficial și nu dau o diplomă recunoscută de stat — scopul e să înțelegi și să știi să aplici. 💡",
+            "link": { "text": "Vezi cursurile 📚", "url": "cursuri.html" }
+        },
+        {
+            "cuvinte": ["greu", "dificil", "usor", "cat de greu", "complicat", "grea"],
+            "raspuns": "Deloc greu! 😊 Totul e explicat pas cu pas, de la zero, în română, pentru începători. Mergi în ritmul tău: dai pauză, revii, reiei. Dacă a putut Carla la 35 de ani, poți și tu. 💪",
+            "link": { "text": "Începe de aici 📚", "url": "cursuri.html" }
+        },
+        {
+            "cuvinte": ["ce program", "ce software", "ce imi trebuie", "ce am nevoie", "instalez", "instalare", "de ce am nevoie"],
+            "raspuns": "Ai nevoie doar de un calculator și de Python (gratuit, de pe python.org), plus un editor simplu ca VS Code. Îți arăt exact cum le instalezi în prima lecție de Python. 💻",
+            "link": { "text": "Mergi la Python 🐍", "url": "cursuri.html" }
+        },
+        {
+            "cuvinte": ["link", "da mi link", "trimite link", "unde", "unde sunt", "arata mi", "unde e", "unde gasesc"],
+            "raspuns": "Uite, aici le găsești pe toate 👇 Dai click și intri direct în pagina de Cursuri.",
+            "link": { "text": "Deschide Cursurile 📚", "url": "cursuri.html" }
+        },
+        {
+            "cuvinte": ["contact", "contactez", "contata", "iau legatura", "vorbesc cu carla", "scriu carlei", "mesaj", "cum te contactez"],
+            "raspuns": "Cel mai ușor mă găsești pe TikTok sau YouTube — lasă un comentariu ori un mesaj și Carla îți răspunde. 💬",
+            "link": { "text": "Scrie-i pe TikTok 💬", "url": "https://www.tiktok.com/@carlitaianistech" }
+        },
+        {
+            "cuvinte": ["cine esti", "cine e ianis", "ce esti", "ianis"],
+            "raspuns": "Sunt Ianis 🤖, asistentul de pe site-ul Carlita & Ianis Tech. Sunt aici să te ajut să găsești ce cauți: cursuri, lecții de Python, știri despre AI și primii pași în tehnologie."
+        },
+        {
+            "cuvinte": ["despre carlita", "cine e carlita", "ce este carlita", "cine e carlita"],
+            "raspuns": "Carla (Carlita) e mamă, studentă la Inteligență Artificială și profesoara ta de tehnologie pe înțelesul tuturor. A început de la zero la 35 de ani — deci, chiar dacă ți se pare greu, se poate! 💛"
+        },
+        {
+            "cuvinte": ["ce este ai", "inteligenta artificiala", "ce e ai", "ce inseamna ai"],
+            "raspuns": "AI (Inteligența Artificială) înseamnă calculatoare care învață să facă lucruri pe care înainte le făceau doar oamenii — scriu texte, creează imagini, răspund la întrebări. Am o secțiune întreagă despre AI. 🤖",
+            "link": { "text": "Vezi lecțiile de AI 🤖", "url": "cursuri.html" }
+        },
+        {
+            "cuvinte": ["python", "de unde incep python", "cum incep python", "invat python", "programare"],
+            "raspuns": "Python e cel mai bun limbaj cu care să începi — e ușor de citit și foarte cerut. Intră la Cursuri, secțiunea Python, și pornește de la prima lecție. 🐍",
+            "link": { "text": "Începe cu Python 🐍", "url": "cursuri.html" }
+        },
+        {
+            "cuvinte": ["cursuri", "curs", "ce invat", "lectii", "ce pot invata", "cursul"],
+            "raspuns": "Găsești cursuri de Python (programare), Inteligență Artificială și Securitate cibernetică — toate în română, explicate simplu, pas cu pas.",
+            "link": { "text": "Vezi toate cursurile 📚", "url": "cursuri.html" }
+        },
+        {
+            "cuvinte": ["gratis", "cost", "cat costa", "pret", "bani", "plata", "gratuit"],
+            "raspuns": "Totul e gratuit! 🎉 Lecțiile, știrile și ghidul de siguranță digitală sunt gratis. Vreau doar să te ajut să înțelegi tehnologia fără frică."
+        },
+        {
+            "cuvinte": ["prea batran", "prea in varsta", "varsta", "prea tarziu", "pot invata", "batrana"],
+            "raspuns": "Niciodată nu e prea târziu! 💪 Carla a început la 35 de ani, iar mulți cursanți au 45, 50, 60+ de ani. Cu răbdare, chiar poți: dacă Carla a putut, poți și tu. 💛"
+        },
+        {
+            "cuvinte": ["video", "youtube", "tiktok", "canal", "vloguri"],
+            "raspuns": "Găsești videoclipurile pe YouTube și pe TikTok — le ai și jos, în subsolul paginii. 🎬",
+            "link": { "text": "Deschide YouTube 🎬", "url": "https://www.youtube.com/@carlita_ianis_tech" }
+        },
+        {
+            "cuvinte": ["acreditat", "acreditare", "diploma", "diplome", "certificat", "recunoscut"],
+            "raspuns": "Cursurile mele sunt lecții practice și gratuite: te învață să faci lucruri reale (Python, AI, siguranță online). Nu sunt cursuri acreditate oficial și nu dau o diplomă recunoscută de stat — scopul e să înțelegi și să știi să aplici. 💡",
+            "link": { "text": "Vezi cursurile 📚", "url": "cursuri.html" }
+        },
+                {
+            "cuvinte": ["buna", "salut", "ciao", "ceau", "servus", "noroc", "hei", "hey", "salutare", "buna ziua", "neata", "buna seara"],
+            "raspuns": "Bună! 😊 Mă bucur că ai trecut pe aici. Sunt Ianis, robotul Carlitei. Cu ce te pot ajuta? Alege o întrebare de mai jos sau scrie-mi tu una. 💛"
+        }
+
+    ]
+}
