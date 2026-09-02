@@ -1242,3 +1242,30 @@ dialog form[method="dialog"] {
     background: #B98F3B;
     transform: translateY(-2px);
 }
+/* ==========================================================
+ACASĂ — grila „Ce învățăm săptămâna aceasta" (cele mai noi 3)
+3 pe rând pe desktop · unul sub altul pe mobil
+ ========================================================== */
+#acasa-noutati {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    #acasa-noutati {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cardurile de pe pagina de acasă — clic pentru video */
+.card--clic {
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card--clic:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(74, 22, 36, .12);
+}

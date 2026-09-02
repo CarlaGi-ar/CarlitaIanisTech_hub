@@ -38,7 +38,6 @@
 
             <nav class="nav">
                 <ul class="nav-links">
-                    <li><a href="index.html">Acasă</a></li>
                     <li><a href="povesteamea.html">Povestea mea</a></li>
                     <li><a href="stiri.html">Știri din tech</a></li>
                     <li><a href="cursuri.html">Cursuri</a></li>
@@ -58,7 +57,7 @@
                 <div class="hero-text">
                     <p class="eyebrow">NU ESTE NICIODATĂ PREA TÂRZIU SĂ ÎNVEȚI</p>
                     <h1>Tehnologia, explicată <em>pe înțelesul tău</em>.</h1>
-                    <p class="sub">Eu sunt Carla — mamă, studentă la Inteligență Artificială și dovada vie că
+                    <p class="sub">Eu sunt Carlita- mamă, studentă la Inteligență Artificială și dovada vie că
                         tehnologia poate fi înțeleasă de oricine, dacă este explicată cu răbdare.</p>
 
                     <div class="hero-butoane">
@@ -92,23 +91,18 @@
                     <span class="cusatura-titlu" aria-hidden="true"></span>
                 </div>
 
-                <div class="stiri-grid card-grid">
-                    <article class="card">
-                        <span class="badge badge--salvie">LECȚIE PYTHON</span>
-                        <h3>Tuplurile, explicate pe înțelesul tuturor</h3>
-                        <p>Ce sunt, când le folosești și de ce nu se schimbă niciodată.</p>
-                    </article>
-                    <article class="card">
-                        <span class="badge badge--bordo">ȘTIRE TRADUSĂ</span>
-                        <h3>Nvidia valorează mai mult decât economia Germaniei?</h3>
-                        <p>Ce înseamnă cifra asta uriașă, pe înțelesul României.</p>
-                    </article>
-                    <article class="card">
-                        <span class="badge badge--aramiu">VIDEO NOU</span>
-                        <h3>Cazul șocant de la Samsung</h3>
-                        <p>Cel mai urmărit videoclip al lunii — vezi de ce.</p>
-                    </article>
-                </div>
+                <div class="card-grid" id="acasa-noutati"></div>
+                <!-- ======= DIALOG PARTAJAT (același ca pe pagina de știri) ======= -->
+                <dialog id="stire-dialog" class="stire-dialog">
+                    <iframe src="" title="Știre" allowfullscreen></iframe>
+                    <h3 class="stire-dialog-titlu"></h3>
+                    <p class="stire-data stire-dialog-data"></p>
+                    <p class="lectie-feedback">Ți-a plăcut?
+                        <a class="stire-dialog-link" href="" target="_blank" rel="noopener noreferrer">Vezi tot pe
+                            YouTube</a> 💛
+                    </p>
+                    <form method="dialog"><button class="btn btn-amber">Închide</button></form>
+                </dialog>
                 <a href="stiri.html" class="btn-secondary">Vezi toate știrile</a>
             </div>
         </section>
@@ -209,7 +203,7 @@
                     <h2>Ghidul siguranței digitale pentru familia ta</h2>
                     <p class="sub">
                         Cele mai frecvente 7 escrocherii online din România și cum le recunoști în 10 secunde.
-                        Scris simplu, de printat și de pus pe frigider — da, chiar pentru părinți și bunici.
+                        Scris simplu, de printat și de pus pe frigider. Da, chiar pentru părinți și bunici.
                     </p>
                 </div>
 
@@ -222,7 +216,8 @@
                         <button type="submit" class="btn btn-amber">Trimite-mi ghidul</button>
                     </form>
 
-                    <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut. Te poți dezabona oricând.</p>
+                    <p class="form-note">Fără spam. Un singur email pe săptămână, cu ce merită știut. Te poți dezabona
+                        oricând.</p>
                 </div>
             </div>
         </section>
@@ -248,12 +243,22 @@
             </ul>
 
             <div class="footer-copy">
-                Cusut cu grijă, în Plymouth &amp; Pojoga · © 2026
+                Cusut cu grijă, în Plymouth &amp; Petroșani · © 2026
             </div>
 
         </div>
     </footer>
-
+    <!-- Întâi lista de știri, apoi scriptul -->
+    <script src="data/stiri-data.js"></script>
+    <script>
+    // Oprește videoclipul când se închide dialogul
+    document.querySelectorAll('dialog').forEach(function (dialog) {
+        dialog.addEventListener('close', function () {
+            var iframe = dialog.querySelector('iframe');
+            if (iframe) { var src = iframe.src; iframe.src = ''; iframe.src = src; }
+        });
+    });
+</script>
     <script src="main.js"></script>
 </body>
 

@@ -110,7 +110,7 @@ function deschideStire(stire) {
 }
 
 // Construiește cardurile (doar dacă suntem pe pagina de știri)
-if (gridStiri && typeof STIRI !== "undefined") {
+if (gridStiri && dialogStire && typeof STIRI !== "undefined") {
 
     // Sortăm: cele noi primele (după dată, descrescător)
     const listaSortata = [...STIRI].sort((a, b) => (b.data || "").localeCompare(a.data || ""));
@@ -152,3 +152,42 @@ filtreStiri.forEach(function (btn) {
         });
     });
 });
+
+/* ==========================================================
+   ACASĂ — cele mai noi 3 știri, pe pagina principală
+   Se umple singur din STIRI. Nu editezi aici — doar stiri-data.js.
+   ========================================================== */
+const gridAcasa = document.getElementById("acasa-noutati");
+
+if (gridAcasa && typeof STIRI !== "undefined") {
+
+    const ETICHETE = {
+        ai: "AI", inovatii: "INOVAȚIE", securitate: "SECURITATE",
+        scandaluri: "SCANDAL", apple: "APPLE", samsung: "SAMSUNG",
+        meta: "META", nvidia: "NVIDIA", chatgpt: "CHATGPT",
+        claude: "CLAUDE", openai: "OPENAI", elon: "ELON MUSK",
+        roboti: "ROBOȚI", romania: "ROMÂNIA", google: "SECURITATE"
+    };
+    const CULORI = ["badge--salvie", "badge--bordo", "badge--aramiu"];
+
+    const celeMaiNoi = [...STIRI]
+        .sort((a, b) => (b.data || "").localeCompare(a.data || ""))
+        .slice(0, 3);
+
+        celeMaiNoi.forEach(function (stire, i) {
+        const primaCat = (stire.categorii || "").split(" ")[0];
+        const eticheta = ETICHETE[primaCat] || "ȘTIRE NOUĂ";
+
+        const card = document.createElement("article");
+        card.className = "card card--clic";              // ← clasă nouă pt. hover/cursor
+        card.innerHTML =
+            '<span class="badge ' + CULORI[i % 3] + '">' + eticheta + '</span>' +
+            '<h3>' + stire.titlu + '</h3>' +
+            '<p>' + (stire.descriere || formatData(stire.data)) + '</p>';
+
+        // 👇 ASTA lipsea — click pe card deschide videoul
+        card.addEventListener("click", function () { deschideStire(stire); });
+
+        gridAcasa.appendChild(card);
+    });
+}
